@@ -16,12 +16,12 @@ export default function WrapperCard() {
       </div>
 
       {/* Main Heading */}
-      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-figtree leading-tight sm:leading-tight md:leading-tight lg:leading-tight xl:leading-tight font-bold text-center sm:text-left">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-figtree leading-tight sm:leading-tight md:leading-tight lg:leading-tight xl:leading-tight font-bold text-center sm:text-left text-white">
         Building the Future of Digital Products
       </h1>
 
       {/* Description */}
-      <p className="font-figtree text-base sm:text-lg lg:text-xl text-[#8E8E8E] leading-relaxed text-center sm:text-left max-w-none sm:max-w-4xl">
+      <p className="font-figtree text-base sm:text-lg lg:text-xl text-white leading-relaxed text-center sm:text-left max-w-none sm:max-w-4xl">
         We are a software development company creating robust digital solutions
         and launching innovative products that reshape industries.
       </p>

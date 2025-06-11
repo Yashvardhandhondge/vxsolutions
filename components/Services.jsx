@@ -96,14 +96,14 @@ export default function Services() {
                       height={28}
                       alt="service-icons"
                     />
-                    <p className="font-figtree text-lg font-bold">
+                    <p className="font-figtree text-lg font-bold text-white">
                       {service.title}
                     </p>
                   </div>
                   <FaPlus color="white" />
                 </div>
                 {activeIndex == index && (
-                  <p className="font-figtree font-bold text-lg">
+                  <p className="font-figtree font-bold text-lg text-white">
                     {service.description}
                   </p>
                 )}

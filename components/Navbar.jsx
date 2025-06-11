@@ -53,7 +53,7 @@
 //         <div className="hidden md:flex items-center gap-3">
 //           {navItems.map((item, index) => (
 //             <Link key={index} href={item.href}>
-//               <h4 className="font-figtree uppercase cursor-pointer text-sm lg:text-base xl:text-lg hover:text-[#A0DD34] nav-hover-btn font-semibold transition-colors duration-200">
+//               <h4 className="font-figtree uppercase cursor-pointer text-sm lg:text-base xl:text-lg hover:text-[#A0DD34] nav-hover-btn font-semibold transition-colors duration-200 text-white">
 //                 {item.label}
 //               </h4>
 //             </Link>
@@ -71,7 +71,7 @@
 //             {navItems.map((item, index) => (
 //               <Link key={index} href={item.href} onClick={toggleMobileMenu}>
 //                 <div className="px-4 sm:px-6 py-4 hover:bg-[#313131] transition-colors duration-200">
-//                   <h4 className="font-figtree uppercase text-base sm:text-lg hover:text-[#A0DD34] font-semibold">
+//                   <h4 className="font-figtree uppercase text-base sm:text-lg hover:text-[#A0DD34] font-semibold text-white">
 //                     {item.label}
 //                   </h4>
 //                 </div>
@@ -129,7 +129,7 @@ export default function Navbar() {
             width={32}
             height={32}
           />
-          <h4 className="hidden md:block md:font-bold md:font-archivo text-sm sm:text-base md:text-lg">
+          <h4 className="hidden md:block md:font-bold md:font-archivo text-sm sm:text-base md:text-lg text-white">
             VX SOFTWARE SOLUTIONS
           </h4>
         </div>
@@ -159,14 +159,13 @@ export default function Navbar() {
                     }
                   >
                     <Link href={item.href}>
-                      <h4 className="font-figtree uppercase text-sm lg:text-base xl:text-lg hover:text-[#A0DD34] nav-hover-btn font-semibold transition-colors duration-200">
+                      <h4 className="font-figtree uppercase text-sm lg:text-base xl:text-lg hover:text-[#A0DD34] nav-hover-btn font-semibold transition-colors duration-200 text-white">
                         {item.label}
                       </h4>
                     </Link>
                     <svg
-                      className={`w-4 h-4 transition-transform duration-200 ${
-                        isProductsDropdownOpen ? "rotate-180" : ""
-                      }`}
+                      className={`w-4 h-4 transition-transform duration-200 ${isProductsDropdownOpen ? "rotate-180" : ""
+                        }`}
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -189,7 +188,7 @@ export default function Navbar() {
                         (dropdownItem, dropdownIndex) => (
                           <Link key={dropdownIndex} href={dropdownItem.href}>
                             <div className="px-4 py-3 hover:bg-[#313131] transition-colors duration-200">
-                              <h4 className="font-figtree text-sm lg:text-base hover:text-[#A0DD34] font-medium">
+                              <h4 className="font-figtree text-sm lg:text-base hover:text-[#A0DD34] font-medium text-white">
                                 {dropdownItem.label}
                               </h4>
                             </div>
@@ -201,7 +200,7 @@ export default function Navbar() {
                 </div>
               ) : (
                 <Link href={item.href}>
-                  <h4 className="font-figtree uppercase cursor-pointer text-sm lg:text-base xl:text-lg hover:text-[#A0DD34] nav-hover-btn font-semibold transition-colors duration-200">
+                  <h4 className="font-figtree uppercase cursor-pointer text-sm lg:text-base xl:text-lg hover:text-[#A0DD34] nav-hover-btn font-semibold transition-colors duration-200 text-white">
                     {item.label}
                   </h4>
                 </Link>
@@ -224,7 +223,7 @@ export default function Navbar() {
                   <div>
                     <div className="flex gap-1 items-center justify-center sm:px-6 py-4 hover:bg-[#313131] transition-colors duration-200">
                       <Link href={item.href} onClick={toggleMobileMenu}>
-                        <h4 className="font-figtree uppercase text-base sm:text-lg hover:text-[#A0DD34] font-semibold">
+                        <h4 className="font-figtree uppercase text-base sm:text-lg hover:text-[#A0DD34] font-semibold text-white">
                           {item.label}
                         </h4>
                       </Link>
@@ -234,9 +233,8 @@ export default function Navbar() {
                         aria-label="Toggle products submenu"
                       >
                         <svg
-                          className={`w-5 h-5 transition-transform duration-200 ${
-                            isMobileProductsOpen ? "rotate-180" : ""
-                          }`}
+                          className={`w-5 h-5 transition-transform duration-200 ${isMobileProductsOpen ? "rotate-180" : ""
+                            }`}
                           fill="currentColor"
                           viewBox="0 0 20 20"
                         >
@@ -260,7 +258,7 @@ export default function Navbar() {
                               onClick={toggleMobileMenu}
                             >
                               <div className="px-8 sm:px-10 py-3 hover:bg-[#313131] transition-colors duration-200">
-                                <h4 className="font-figtree text-sm sm:text-base hover:text-[#A0DD34] font-medium">
+                                <h4 className="font-figtree text-sm sm:text-base hover:text-[#A0DD34] font-medium text-white">
                                   {dropdownItem.label}
                                 </h4>
                               </div>
@@ -273,7 +271,7 @@ export default function Navbar() {
                 ) : (
                   <Link href={item.href} onClick={toggleMobileMenu}>
                     <div className="px-4 sm:px-6 py-4 hover:bg-[#313131] transition-colors duration-200">
-                      <h4 className="font-figtree uppercase text-base sm:text-lg hover:text-[#A0DD34] font-semibold">
+                      <h4 className="font-figtree uppercase text-base sm:text-lg hover:text-[#A0DD34] font-semibold text-white">
                         {item.label}
                       </h4>
                     </div>

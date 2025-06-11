@@ -156,10 +156,10 @@ export default function Contact() {
       <div className="flex flex-col gap-3 sm:gap-4 bg-[#0C0C0C] px-3 sm:px-6 lg:px-3 py-4 sm:py-6">
         {/* Header Section */}
         <div className="flex flex-col gap-1 sm:gap-2 text-center sm:text-left">
-          <h2 className="font-figtree font-semibold text-xl sm:text-2xl lg:text-3xl">
+          <h2 className="font-figtree font-semibold text-xl sm:text-2xl lg:text-3xl text-white">
             Contact Us
           </h2>
-          <h5 className="font-figtree font-semibold text-lg sm:text-xl text-[#D2D2D2]">
+          <h5 className="font-figtree font-semibold text-lg sm:text-xl text-white">
             Let's come together to create something truly great.
           </h5>
         </div>
@@ -222,7 +222,7 @@ export default function Contact() {
             <form className="w-full h-full flex flex-col gap-4 sm:gap-6 xl:overflow-auto">
               {/* Name Field */}
               <div className="flex flex-col gap-1 sm:gap-2">
-                <label className="text-[#D2D2D2] font-figtree text-sm sm:text-base">
+                <label className="text-white font-figtree text-sm sm:text-base">
                   Name
                 </label>
                 <input
@@ -235,7 +235,7 @@ export default function Contact() {
               {/* Email & Phone Row */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <div className="flex-1 flex flex-col gap-1 sm:gap-2">
-                  <label className="text-[#D2D2D2] font-figtree text-sm sm:text-base">
+                  <label className="text-white font-figtree text-sm sm:text-base">
                     Email ID
                   </label>
                   <input
@@ -245,7 +245,7 @@ export default function Contact() {
                   />
                 </div>
                 <div className="flex-1 flex flex-col gap-1 sm:gap-2">
-                  <label className="text-[#D2D2D2] font-figtree text-sm sm:text-base">
+                  <label className="text-white font-figtree text-sm sm:text-base">
                     Phone Number
                   </label>
                   <input
@@ -258,7 +258,7 @@ export default function Contact() {
 
               {/* Service Dropdown */}
               <div className="flex flex-col gap-1 sm:gap-2">
-                <label className="text-[#D2D2D2] font-figtree text-sm sm:text-base">
+                <label className="text-white font-figtree text-sm sm:text-base">
                   Service
                 </label>
                 <select
@@ -282,7 +282,7 @@ export default function Contact() {
 
               {/* Message Textarea */}
               <div className="flex flex-col gap-1 sm:gap-2 flex-1">
-                <label className="text-[#D2D2D2] font-figtree text-sm sm:text-base">
+                <label className="text-white font-figtree text-sm sm:text-base">
                   Message
                 </label>
                 <textarea

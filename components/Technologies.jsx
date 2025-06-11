@@ -69,7 +69,7 @@ const Technologies = () => {
         />
         <div className="absolute top-1/2 left-1/2 scale-[2.5] -translate-x-1/2 -translate-y-1/2 expanding-circle w-40 h-40 rounded-full border-[0.1px] border-transparent"></div>
       </div>
-      <p className="font-figtree text-4xl font-extrabold leading-11 text-outline">
+      <p className="font-figtree text-4xl font-extrabold leading-11 text-white">
         At VX Software Solutions, we work with all leading-edge technologies to
         build world-class digital solutions. From AI to cloud, mobile to
         blockchain—we cover the full tech spectrum. Our team stays ahead of the
