@@ -1,4 +1,4 @@
-const repoName = 'vx-software-solutions'; // Replace with your GitHub repo name
+const repoName = 'vx-software-solutions';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
