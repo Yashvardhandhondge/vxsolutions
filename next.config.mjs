@@ -1,4 +1,4 @@
-const repoName = 'vx-software-solutions';
+const repoName = 'vx-website';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
