@@ -84,12 +84,11 @@ const Industry = () => {
             style={{ backgroundColor: industry.bgColor }}
             className={`relative flex flex-col gap-4 cursor-pointer col-span-1 ${getColSpanClass(
               industry.span
-            )} min-h-52 justify-center items-center rounded-xl hover:bg-gradient-to-b hover:from-[${
-              industry.bgColor
-            }] hover:via-[#121015] hover:to-[#1f1e1e] hover:transition-colors`}
+            )} min-h-52 justify-center items-center rounded-xl hover:bg-gradient-to-b hover:from-[${industry.bgColor
+              }] hover:via-[#121015] hover:to-[#1f1e1e] hover:transition-colors`}
           >
             {activeIndustryIndex == index ? (
-              <div className="absolute text-center text-md leading-6 font-figtree font-bold px-2">
+              <div className="absolute text-center text-md leading-6 font-figtree font-bold px-2 text-white">
                 {industry.description}
               </div>
             ) : (
@@ -100,10 +99,7 @@ const Industry = () => {
                   alt="expertise-icons"
                   src={`/images/icons/${industry.icon}.png`}
                 />
-                <p
-                  style={{ color: industry.textColor }}
-                  className="font-figtree text-xl font-semibold"
-                >
+                <p className="font-figtree text-xl font-semibold text-white">
                   {industry.title}
                 </p>
               </>

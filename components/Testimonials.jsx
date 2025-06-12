@@ -91,7 +91,7 @@ export default function Testimonials() {
             >
               <div className="flex flex-col gap-2">
                 <FaQuoteLeft size={"1.5em"} className="sm:text-2xl" />
-                <p className="font-figtree text-lg sm:text-xl lg:text-2xl font-semibold">
+                <p className="font-figtree text-lg font-bold text-white">
                   {testimonial.quote}
                 </p>
                 <FaQuoteRight size={"1.5em"} className="self-end sm:text-2xl" />
@@ -108,7 +108,7 @@ export default function Testimonials() {
                   />
                 </div>
                 <div className="flex flex-col gap-1 sm:gap-2">
-                  <h4 className="font-figtree font-semibold text-xl sm:text-2xl lg:text-3xl">
+                  <h4 className="font-figtree text-base font-semibold text-white">
                     {testimonial.name}
                   </h4>
                   <h5 className="font-figtree font-medium text-base sm:text-lg lg:text-xl">
