@@ -427,69 +427,72 @@ const faqRef = useRef(null);
 
   return (
     <div>
-       <nav className="bg-white shadow-sm border-b border-gray-300">
+       <nav className="bg-white shadow-sm border-b border-gray-300 ">
         <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <div className="flex-shrink-0">
-              <Link href="/" className="text-xl font-bold text-gray-900">
-                V Remind              </Link>
-            </div>
+          <div className="flex-shrink-0">
+  <Link href="/" className="block">
+    <span className="text-xl font-bold text-gray-900">V Remind</span>
+    <span className="block text-xs text-gray-500">Created by Vx School Board</span>
+  </Link>
+</div>
+
 
             {/* Navigation Links - Desktop */}
             <div className="hidden md:block">
               <div className="ml-80 flex items-baseline space-x-8">
                 <button
                   onClick={() => scrollToSection('Schools')}
-                  className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
+                  className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors cursor-pointer"
                 >
                   FOR SCHOOLS
                 </button>
                 <button
                   onClick={() => scrollToSection('Parents')}
-                  className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
+                  className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors cursor-pointer"
                 >
                   FOR PARENTS
                 </button>
                 <button
                   onClick={() => scrollToSection('Teachers')}
-                  className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
+                  className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors cursor-pointer"
                 >
                   FOR TEACHERS
                 </button>
                 <button
                    onClick={() => scrollToSection('Pricing')}
-                  className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
+                  className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors cursor-pointer"
                 >
                   PRICING
                 </button>
                 <button
                     onClick={() => scrollToSection('FAQs')}
-                  className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
+                  className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors cursor-pointer"
                 >
                   FAQs
                 </button>
                 <Link
                   href="/contactus"
-                  className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
+                  className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors "
                 >
                   CONTACT US
                 </Link>
               </div>
             </div>
 
-            {/* Login Button - Desktop */}
-            <div className="hidden md:block">
-              <Link
-                href="/login"
-                className="bg-[#5029FF] hover:bg-purple-700 text-white pl-4 pr-1 py-1 rounded-full text-sm font-medium flex items-center gap-4 transition-colors"
-              >
-                Login
-                <div className="bg-white rounded-full p-2">
-                  <ArrowRight size={20} className="text-black" />
-                </div>
-              </Link>
-            </div>
+            <a
+  href="https://vremind.vxsoftwaresolutions.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-[#5029FF] hover:bg-purple-700 text-white pl-4 pr-1 py-1 rounded-full text-sm font-medium flex items-center gap-4 transition-colors"
+>
+  Login
+  <div className="bg-white rounded-full p-2">
+    <ArrowRight size={20} className="text-black" />
+  </div>
+</a>
+
 
             {/* Mobile menu button */}
             <div className="md:hidden">
@@ -558,12 +561,13 @@ const faqRef = useRef(null);
             >
               FOR TEACHERS
             </button>
-            <Link
-              href="/pricing"
+            <button
+           
+               onClick={() => scrollToSection('Pricing')}
               className="text-gray-700 hover:text-gray-900 block px-3 py-2 text-base font-medium"
             >
               PRICING
-            </Link>
+            </button>
             <button
                 onClick={() => scrollToSection('FAQs')}
               className="text-gray-700 hover:text-gray-900 block px-3 py-2 text-base font-medium"
@@ -576,15 +580,18 @@ const faqRef = useRef(null);
             >
               CONTACT US
             </Link>
-            <div className="px-3 py-2">
-              <Link
-                href="/login"
-                className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full text-sm font-medium flex items-center justify-center gap-2 transition-colors"
-              >
-                Login
-                <ArrowRight size={16} />
-              </Link>
-            </div>
+         <div className="px-3 py-2">
+  <a
+    href="https://vremind.vxsoftwaresolutions.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full text-sm font-medium flex items-center justify-center gap-2 transition-colors"
+  >
+    Login
+    <ArrowRight size={16} />
+  </a>
+</div>
+
           </div>
         </div>
       </nav>
@@ -1287,7 +1294,7 @@ const faqRef = useRef(null);
               {plan.yearlyPrice || plan.monthlyPrice ? (
                 <div className="mb-6">
                   <div className="flex items-baseline">
-                    <span className="text-3xl font-bold">
+                    <span className="text-3xl font-bold blur-[5px]">
                       ₹ {isYearly ? plan.yearlyPrice : plan.monthlyPrice}
                     </span>
                     <span className={`ml-2 text-sm ${
