@@ -210,8 +210,10 @@ export default function Contact() {
               <div className="flex items-start gap-1 sm:gap-2">
                 <FaLocationDot className="mt-1 text-white text-sm sm:text-base flex-shrink-0" />
                 <h4 className="font-figtree text-sm sm:text-base text-white leading-relaxed max-w-xs sm:max-w-sm lg:max-w-md">
-                  241/242, 4th Floor, Building No 2, Solitaire Corporate Park
-                  Chakala, Andheri (East), Mumbai, Maharashtra 400093
+                 Flat no 102, Namas Building, #945
+Road No - 48, Ayyappa Society, Madhapur
+Hyderabad 500081
+
                 </h4>
               </div>
             </div>

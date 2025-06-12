@@ -79,7 +79,7 @@ export default function AboutUs() {
   const categories = [
     { name: "Vebha", bgColor: "#7134DD33", borderColor: "#7134DD" },
     { name: "Jeeva", bgColor: "#A0DD3433", borderColor: "#A0DD34" },
-    { name: "VX School Board", bgColor: "#D8FF2933", borderColor: "#D8FF29" },
+    { name: "V Remind", bgColor: "#D8FF2933", borderColor: "#D8FF29" },
     { name: "Air Asia", bgColor: "#5029FF33", borderColor: "#5029FF" },
     { name: "Data Bricks", bgColor: "#1423C933", borderColor: "#1423C9" },
     { name: "Jasper", bgColor: "#C9BA1433", borderColor: "#C9BA14" },

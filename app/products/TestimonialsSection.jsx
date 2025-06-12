@@ -19,7 +19,7 @@ export default function TestimonialsSection() {
       name: "B Rama Krishna",
       title: "Head of Bhashyam Schools",
       image: "/productpage/rama.png", 
-      quote: "VX School Board has simplified our admission procedures, data management process, data accessibility and communication between the stakeholders thereby saving our valuable time as well as paper.",
+      quote: "V Remind has simplified our admission procedures, data management process, data accessibility and communication between the stakeholders thereby saving our valuable time as well as paper.",
       bgColor: "bg-purple-400"
     },
     {
@@ -57,7 +57,7 @@ export default function TestimonialsSection() {
           What Our Users Are Saying
         </h2>
         <p className="text-gray-300 text-lg">
-          Real stories from schools, teachers, and parents who trust VX School Board.
+          Real stories from schools, teachers, and parents who trust V Remind.
         </p>
       </div>
 

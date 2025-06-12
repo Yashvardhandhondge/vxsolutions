@@ -260,7 +260,7 @@ const PlatformFeaturesPage = () => {
           name: "B Rama Krishna",
           title: "Head of Bhashyam Schools",
           image: "/productpage/rama.png", 
-          quote: "VX School Board has simplified our admission procedures, data management process, data accessibility and communication between the stakeholders thereby saving our valuable time as well as paper.",
+          quote: "V Remind has simplified our admission procedures, data management process, data accessibility and communication between the stakeholders thereby saving our valuable time as well as paper.",
           bgColor: "bg-purple-400"
         },
         {
@@ -284,36 +284,36 @@ const PlatformFeaturesPage = () => {
 
   const faqData = [
     {
-      question: "What is VX School Board?",
-      answer: "VX School Board is a robust and user-friendly school management system crafted by VX to transform how educational institutions operate. Designed with flexibility and ease of use in mind, it brings together administrators, teachers, and parents on a single digital platform. From managing student data and streamlining administrative workflows to enhancing classroom efficiency and parent-teacher communication, VX School Board simplifies every aspect of school operations."
+      question: "What is V Remind?",
+      answer: "V Remind is a robust and user-friendly school management system crafted by VX to transform how educational institutions operate. Designed with flexibility and ease of use in mind, it brings together administrators, teachers, and parents on a single digital platform. From managing student data and streamlining administrative workflows to enhancing classroom efficiency and parent-teacher communication, V Remind simplifies every aspect of school operations."
     },
     {
-      question: "How is VX School Board different from other school management software?",
-      answer: "VX School Board stands out with its intuitive user interface, comprehensive feature set, and seamless integration capabilities. Unlike other solutions, it offers real-time communication tools, advanced analytics, and customizable workflows that adapt to your school's unique needs."
+      question: "How is V Remind different from other school management software?",
+      answer: "V Remind stands out with its intuitive user interface, comprehensive feature set, and seamless integration capabilities. Unlike other solutions, it offers real-time communication tools, advanced analytics, and customizable workflows that adapt to your school's unique needs."
     },
     {
-      question: "What kind of software programs do I require to run VX School Board?",
-      answer: "VX School Board is a cloud-based solution that runs directly in your web browser. You don't need to install any additional software. It's compatible with all modern browsers including Chrome, Firefox, Safari, and Edge. Mobile apps are also available for iOS and Android devices."
+      question: "What kind of software programs do I require to run V Remind?",
+      answer: "V Remind is a cloud-based solution that runs directly in your web browser. You don't need to install any additional software. It's compatible with all modern browsers including Chrome, Firefox, Safari, and Edge. Mobile apps are also available for iOS and Android devices."
     },
     {
-      question: "Does VX School Board offer support and training to clients?",
-      answer: "Yes, VX School Board provides comprehensive 24/7 customer support, including phone, email, and live chat assistance. We also offer extensive training programs, onboarding sessions, video tutorials, and detailed documentation to ensure your team can maximize the platform's potential."
+      question: "Does V Remind offer support and training to clients?",
+      answer: "Yes, V Remind provides comprehensive 24/7 customer support, including phone, email, and live chat assistance. We also offer extensive training programs, onboarding sessions, video tutorials, and detailed documentation to ensure your team can maximize the platform's potential."
     },
     {
-      question: "Can I try VX School Board before buying it?",
-      answer: "Absolutely! VX School Board offers a free 30-day trial with full access to all features. No credit card required. You can also schedule a personalized demo with our team to see how the system works with your specific requirements."
+      question: "Can I try V Remind before buying it?",
+      answer: "Absolutely! V Remind offers a free 30-day trial with full access to all features. No credit card required. You can also schedule a personalized demo with our team to see how the system works with your specific requirements."
     },
     {
-      question: "How much VX School Board cost? Any hidden fees which I should know about it?",
-      answer: "VX School Board offers transparent pricing with no hidden fees. Our plans start from $29/month for small schools and scale based on student enrollment. The price includes hosting, security, updates, and basic support. Premium support and additional integrations are available as optional add-ons."
+      question: "How much V Remind cost? Any hidden fees which I should know about it?",
+      answer: "V Remind offers transparent pricing with no hidden fees. Our plans start from $29/month for small schools and scale based on student enrollment. The price includes hosting, security, updates, and basic support. Premium support and additional integrations are available as optional add-ons."
     },
     {
-      question: "Does VX School Board provide GPS tracking?",
-      answer: "Yes, VX School Board includes GPS tracking features for school transportation management. You can track bus routes in real-time, monitor student pickup/drop-off times, and send automated notifications to parents about bus arrivals and delays."
+      question: "Does V Remind provide GPS tracking?",
+      answer: "Yes, V Remind includes GPS tracking features for school transportation management. You can track bus routes in real-time, monitor student pickup/drop-off times, and send automated notifications to parents about bus arrivals and delays."
     },
     {
       question: "Will I be bound to any long-term contract?",
-      answer: "No, VX School Board operates on flexible month-to-month subscriptions with no long-term contracts required. You can upgrade, downgrade, or cancel your subscription at any time. We also offer discounted annual plans for schools that prefer yearly billing."
+      answer: "No, V Remind operates on flexible month-to-month subscriptions with no long-term contracts required. You can upgrade, downgrade, or cancel your subscription at any time. We also offer discounted annual plans for schools that prefer yearly billing."
     }
   ];
 
@@ -690,7 +690,7 @@ const faqRef = useRef(null);
         <path d="M5.20833 2.91669C5.04257 2.91669 4.8836 2.98253 4.76639 3.09975C4.64918 3.21696 4.58333 3.37593 4.58333 3.54169V17.0834H6.25V14.7917C6.25 14.2167 6.71667 13.75 7.29167 13.75H12.7083C13.2833 13.75 13.75 14.2167 13.75 14.7917V17.0834H15.4167V9.79169C15.4167 9.62593 15.3508 9.46696 15.2336 9.34975C15.1164 9.23254 14.9574 9.16669 14.7917 9.16669H13.125C12.9592 9.16669 12.8003 9.10084 12.6831 8.98363C12.5658 8.86642 12.5 8.70745 12.5 8.54169V3.54169C12.5 3.37593 12.4341 3.21696 12.3169 3.09975C12.1997 2.98253 12.0408 2.91669 11.875 2.91669H5.20833ZM7.5 15V17.0834H9.375V15H7.5ZM10.625 15V17.0834H12.5V15H10.625ZM16.0417 18.3334H3.95833C3.79257 18.3334 3.6336 18.2675 3.51639 18.1503C3.39918 18.0331 3.33333 17.8741 3.33333 17.7084V3.54169C3.33333 3.04441 3.53088 2.56749 3.88251 2.21586C4.23414 1.86423 4.71105 1.66669 5.20833 1.66669H11.875C12.3723 1.66669 12.8492 1.86423 13.2008 2.21586C13.5525 2.56749 13.75 3.04441 13.75 3.54169V7.91669H14.7917C15.0379 7.91669 15.2817 7.96519 15.5092 8.05941C15.7367 8.15364 15.9434 8.29175 16.1175 8.46586C16.2916 8.63997 16.4297 8.84667 16.5239 9.07416C16.6182 9.30164 16.6667 9.54546 16.6667 9.79169V17.7084C16.6667 17.8741 16.6008 18.0331 16.4836 18.1503C16.3664 18.2675 16.2074 18.3334 16.0417 18.3334ZM6.25 5.41669C6.25 5.19567 6.3378 4.98371 6.49408 4.82743C6.65036 4.67115 6.86232 4.58335 7.08333 4.58335C7.30435 4.58335 7.51631 4.67115 7.67259 4.82743C7.82887 4.98371 7.91667 5.19567 7.91667 5.41669C7.91667 5.6377 7.82887 5.84966 7.67259 6.00594C7.51631 6.16222 7.30435 6.25002 7.08333 6.25002C6.86232 6.25002 6.65036 6.16222 6.49408 6.00594C6.3378 5.84966 6.25 5.6377 6.25 5.41669ZM7.08333 10.4167C6.86232 10.4167 6.65036 10.5045 6.49408 10.6608C6.3378 10.817 6.25 11.029 6.25 11.25C6.25 11.471 6.3378 11.683 6.49408 11.8393C6.65036 11.9956 6.86232 12.0834 7.08333 12.0834C7.30435 12.0834 7.51631 11.9956 7.67259 11.8393C7.82887 11.683 7.91667 11.471 7.91667 11.25C7.91667 11.029 7.82887 10.817 7.67259 10.6608C7.51631 10.5045 7.30435 10.4167 7.08333 10.4167ZM7.08333 7.50002C6.86232 7.50002 6.65036 7.58782 6.49408 7.7441C6.3378 7.90038 6.25 8.11234 6.25 8.33335C6.25 8.55437 6.3378 8.76633 6.49408 8.92261C6.65036 9.07889 6.86232 9.16669 7.08333 9.16669C7.30435 9.16669 7.51631 9.07889 7.67259 8.92261C7.82887 8.76633 7.91667 8.55437 7.91667 8.33335C7.91667 8.11234 7.82887 7.90038 7.67259 7.7441C7.51631 7.58782 7.30435 7.50002 7.08333 7.50002ZM10 4.58335C9.77899 4.58335 9.56702 4.67115 9.41074 4.82743C9.25446 4.98371 9.16667 5.19567 9.16667 5.41669C9.16667 5.6377 9.25446 5.84966 9.41074 6.00594C9.56702 6.16222 9.77899 6.25002 10 6.25002C10.221 6.25002 10.433 6.16222 10.5893 6.00594C10.7455 5.84966 10.8333 5.6377 10.8333 5.41669C10.8333 5.19567 10.7455 4.98371 10.5893 4.82743C10.433 4.67115 10.221 4.58335 10 4.58335ZM10 10.4167C9.77899 10.4167 9.56702 10.5045 9.41074 10.6608C9.25446 10.817 9.16667 11.029 9.16667 11.25C9.16667 11.471 9.25446 11.683 9.41074 11.8393C9.56702 11.9956 9.77899 12.0834 10 12.0834C10.221 12.0834 10.433 11.9956 10.5893 11.8393C10.7455 11.683 10.8333 11.471 10.8333 11.25C10.8333 11.029 10.7455 10.817 10.5893 10.6608C10.433 10.5045 10.221 10.4167 10 10.4167ZM12.9167 10.4167C12.6957 10.4167 12.4837 10.5045 12.3274 10.6608C12.1711 10.817 12.0833 11.029 12.0833 11.25C12.0833 11.471 12.1711 11.683 12.3274 11.8393C12.4837 11.9956 12.6957 12.0834 12.9167 12.0834C13.1377 12.0834 13.3496 11.9956 13.5059 11.8393C13.6622 11.683 13.75 11.471 13.75 11.25C13.75 11.029 13.6622 10.817 13.5059 10.6608C13.3496 10.5045 13.1377 10.4167 12.9167 10.4167ZM10 7.50002C9.77899 7.50002 9.56702 7.58782 9.41074 7.7441C9.25446 7.90038 9.16667 8.11234 9.16667 8.33335C9.16667 8.55437 9.25446 8.76633 9.41074 8.92261C9.56702 9.07889 9.77899 9.16669 10 9.16669C10.221 9.16669 10.433 9.07889 10.5893 8.92261C10.7455 8.76633 10.8333 8.55437 10.8333 8.33335C10.8333 8.11234 10.7455 7.90038 10.5893 7.7441C10.433 7.58782 10.221 7.50002 10 7.50002Z" fill="black" fillOpacity="0.2"/>
         </svg>
         
-                      <span className="text-sm font-medium text-gray-700">VX School Board</span>
+                      <span className="text-sm font-medium text-gray-700">V Remind</span>
                     </div>
         
                     {/* Main Heading */}
@@ -704,11 +704,11 @@ const faqRef = useRef(null);
                   <div className="space-y-6 lg:col-span-2 ">
                     {/* Description Text */}
                     <p className="text-black text-[24px] leading-relaxed ">
-                      VX School Board is a robust and user-friendly school management system crafted by VX 
+                      V Remind is a robust and user-friendly school management system crafted by VX 
                       to transform how educational institutions operate. Designed with flexibility and ease of 
                       use in mind, it brings together administrators, teachers, and parents on a single digital 
                       platform. From managing student data and streamlining administrative workflows to 
-                      enhancing classroom efficiency and parent-teacher communication, VX School Board 
+                      enhancing classroom efficiency and parent-teacher communication, V Remind 
                       simplifies every aspect of school operations.
                     </p>
         
@@ -999,7 +999,7 @@ const faqRef = useRef(null);
           What Our Users Are Saying
         </h2>
         <p className="text-gray-300 text-lg">
-          Real stories from schools, teachers, and parents who trust VX School Board.
+          Real stories from schools, teachers, and parents who trust V Remind.
         </p>
       </div>
 

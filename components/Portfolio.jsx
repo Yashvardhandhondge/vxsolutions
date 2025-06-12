@@ -11,7 +11,7 @@ export default function Portfolio() {
         {
           title: "School(ERP)",
           link: "/products",
-          subtitle: "VX School Board",
+          subtitle: "V Remind",
           bgColor: "#7134DD33",
           textColor: "#7134DD",
         },

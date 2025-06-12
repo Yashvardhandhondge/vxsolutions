@@ -12,36 +12,36 @@ export default function FAQComponent() {
 
   const faqData = [
     {
-      question: "What is VX School Board?",
-      answer: "VX School Board is a robust and user-friendly school management system crafted by VX to transform how educational institutions operate. Designed with flexibility and ease of use in mind, it brings together administrators, teachers, and parents on a single digital platform. From managing student data and streamlining administrative workflows to enhancing classroom efficiency and parent-teacher communication, VX School Board simplifies every aspect of school operations."
+      question: "What is V Remind?",
+      answer: "V Remind is a robust and user-friendly school management system crafted by VX to transform how educational institutions operate. Designed with flexibility and ease of use in mind, it brings together administrators, teachers, and parents on a single digital platform. From managing student data and streamlining administrative workflows to enhancing classroom efficiency and parent-teacher communication, V Remind simplifies every aspect of school operations."
     },
     {
-      question: "How is VX School Board different from other school management software?",
-      answer: "VX School Board stands out with its intuitive user interface, comprehensive feature set, and seamless integration capabilities. Unlike other solutions, it offers real-time communication tools, advanced analytics, and customizable workflows that adapt to your school's unique needs."
+      question: "How is V Remind different from other school management software?",
+      answer: "V Remind stands out with its intuitive user interface, comprehensive feature set, and seamless integration capabilities. Unlike other solutions, it offers real-time communication tools, advanced analytics, and customizable workflows that adapt to your school's unique needs."
     },
     {
-      question: "What kind of software programs do I require to run VX School Board?",
-      answer: "VX School Board is a cloud-based solution that runs directly in your web browser. You don't need to install any additional software. It's compatible with all modern browsers including Chrome, Firefox, Safari, and Edge. Mobile apps are also available for iOS and Android devices."
+      question: "What kind of software programs do I require to run V Remind?",
+      answer: "V Remind is a cloud-based solution that runs directly in your web browser. You don't need to install any additional software. It's compatible with all modern browsers including Chrome, Firefox, Safari, and Edge. Mobile apps are also available for iOS and Android devices."
     },
     {
-      question: "Does VX School Board offer support and training to clients?",
-      answer: "Yes, VX School Board provides comprehensive 24/7 customer support, including phone, email, and live chat assistance. We also offer extensive training programs, onboarding sessions, video tutorials, and detailed documentation to ensure your team can maximize the platform's potential."
+      question: "Does V Remind offer support and training to clients?",
+      answer: "Yes, V Remind provides comprehensive 24/7 customer support, including phone, email, and live chat assistance. We also offer extensive training programs, onboarding sessions, video tutorials, and detailed documentation to ensure your team can maximize the platform's potential."
     },
     {
-      question: "Can I try VX School Board before buying it?",
-      answer: "Absolutely! VX School Board offers a free 30-day trial with full access to all features. No credit card required. You can also schedule a personalized demo with our team to see how the system works with your specific requirements."
+      question: "Can I try V Remind before buying it?",
+      answer: "Absolutely! V Remind offers a free 30-day trial with full access to all features. No credit card required. You can also schedule a personalized demo with our team to see how the system works with your specific requirements."
     },
     {
-      question: "How much VX School Board cost? Any hidden fees which I should know about it?",
-      answer: "VX School Board offers transparent pricing with no hidden fees. Our plans start from $29/month for small schools and scale based on student enrollment. The price includes hosting, security, updates, and basic support. Premium support and additional integrations are available as optional add-ons."
+      question: "How much V Remind cost? Any hidden fees which I should know about it?",
+      answer: "V Remind offers transparent pricing with no hidden fees. Our plans start from $29/month for small schools and scale based on student enrollment. The price includes hosting, security, updates, and basic support. Premium support and additional integrations are available as optional add-ons."
     },
     {
-      question: "Does VX School Board provide GPS tracking?",
-      answer: "Yes, VX School Board includes GPS tracking features for school transportation management. You can track bus routes in real-time, monitor student pickup/drop-off times, and send automated notifications to parents about bus arrivals and delays."
+      question: "Does V Remind provide GPS tracking?",
+      answer: "Yes, V Remind includes GPS tracking features for school transportation management. You can track bus routes in real-time, monitor student pickup/drop-off times, and send automated notifications to parents about bus arrivals and delays."
     },
     {
       question: "Will I be bound to any long-term contract?",
-      answer: "No, VX School Board operates on flexible month-to-month subscriptions with no long-term contracts required. You can upgrade, downgrade, or cancel your subscription at any time. We also offer discounted annual plans for schools that prefer yearly billing."
+      answer: "No, V Remind operates on flexible month-to-month subscriptions with no long-term contracts required. You can upgrade, downgrade, or cancel your subscription at any time. We also offer discounted annual plans for schools that prefer yearly billing."
     }
   ];
 
