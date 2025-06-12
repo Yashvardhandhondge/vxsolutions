@@ -9,8 +9,7 @@ const SubNavbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="text-xl font-bold text-gray-900">
-              VX SCHOOL BOARD
-            </Link>
+              V Remind            </Link>
           </div>
 
           {/* Navigation Links */}

@@ -13,7 +13,7 @@ export default function Navbar() {
       label: "Products",
       href: "/products",
       hasDropdown: true,
-      dropdownItems: [{ label: "VX Software Product", href: "/products" }],
+      dropdownItems: [{ label: "V Remind", href: "/products" }],
     },
     { label: "Portfolio", href: "/portfolio" },
     { label: "About Us", href: "/about-us" },

@@ -44,8 +44,8 @@ const PricingPage = () => {
   const plans = [
     {
       name: 'Standard',
-      yearlyPrice: '50,000',
-      monthlyPrice: '5,000',
+      yearlyPrice: 'XXXX',
+      monthlyPrice: 'XXXX',
       period: isYearly ? 'billed annually' : 'billed monthly',
       features: [
         'Up to 300 Students',
@@ -59,8 +59,8 @@ const PricingPage = () => {
     },
     {
       name: 'Premium',
-      yearlyPrice: '99,999',
-      monthlyPrice: '10,000',
+      yearlyPrice: 'XXXX',
+      monthlyPrice: 'XXXX',
       period: isYearly ? 'billed annually' : 'billed monthly',
       features: [
         'Up to 800 Students',
@@ -75,8 +75,8 @@ const PricingPage = () => {
     },
     {
       name: 'Ultimate',
-      yearlyPrice: '1,99,999',
-      monthlyPrice: '20,000',
+      yearlyPrice: 'XXXX',
+      monthlyPrice: 'XXXX',
       period: isYearly ? 'billed annually' : 'billed monthly',
       features: [
         'Up to 1200 Students',
@@ -189,22 +189,11 @@ const PricingPage = () => {
 
               {/* Price */}
               {plan.yearlyPrice || plan.monthlyPrice ? (
-                <div className="mb-6">
-                  <div className="flex items-baseline">
-                    <span className="text-3xl font-bold">
-                      ₹ {isYearly ? plan.yearlyPrice : plan.monthlyPrice}
-                    </span>
-                    <span className={`ml-2 text-sm ${
-                      plan.gradient ? 'text-blue-100' : 'text-gray-400'
-                    }`}>
-                      + GST
-                    </span>
+                <div className="mb-6 relative">
+                  {/* Blur overlay with blue tint - no underlying price content */}
+                  <div className="h-20 bg-[#1423C9]/80 backdrop-blur-md rounded-lg flex items-center justify-center">
+                    <span className="text-white font-semibold text-sm">Contact for Pricing</span>
                   </div>
-                  <p className={`text-sm mt-1 ${
-                    plan.gradient ? 'text-blue-100' : 'text-gray-400'
-                  }`}>
-                    {plan.period}
-                  </p>
                 </div>
               ) : (
                 <div className="mb-6">
@@ -301,4 +290,4 @@ const PricingPage = () => {
   );
 };
 
-export default PricingPage; 
+export default PricingPage;

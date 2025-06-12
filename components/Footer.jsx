@@ -38,8 +38,7 @@ export default function Footer() {
             href="#"
             className="block font-figtree text-[#D2D2D2] hover:text-white transition"
           >
-            VX School Board
-          </a>
+            V Remind          </a>
         </div>
 
         <div className="space-y-4">

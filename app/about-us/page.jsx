@@ -57,19 +57,22 @@ export default function AboutUs() {
 
   const members = [
     {
-      name: "Vamsi D Krishna",
-      designation: "Founder and CEO",
-      src: "founder",
+      name: "Vamsi Krishna",
+      designation: "Founder & CEO",
+      description:
+        "I'm Vamsi, the Founder and CEO of VX Software Solutions. Over the past 6 years, I've built multiple tech products from the ground up. My passion lies in solving real operational challenges through innovation. For the last 4 years, I've been deeply involved in the RCM domain, working across medical coding and billing projects. I believe in creating systems that are not just scalable — but truly impactful for healthcare providers.",
     },
     {
-      name: "Venkata Siva kumar",
-      designation: "Co-founder and Managing Director",
-      src: "cofounder",
+      name: "Venkata Siva Kumar",
+      designation: "Co-Founder & Managing Director",
+      description:
+        "I'm Siva Kumar, and I handle the strategic growth and operations at VX. With 5 years of experience in managing organizations and securing project leads, I've always focused on execution and delivery. I stay closely involved in day-to-day operations to make sure every client engagement is handled with care, clarity, and commitment.",
     },
     {
-      name: "Pradeep Reddy",
-      designation: "Co-founder and CFO",
-      src: "cfo",
+      name: "Pradeep",
+      designation: "Co-Founder & CFO",
+      description:
+        "Hi, I'm Pradeep — a Chartered Accountant and the CFO at VX. I bring over 5 years of experience in finance and accounting to the table. Numbers are my language, and I make sure every financial process we run is sharp, compliant, and optimized. At VX, I'm focused on building a financially strong, transparent, and trustworthy ecosystem for our clients and teams.",
     },
   ];
 
@@ -172,23 +175,20 @@ export default function AboutUs() {
             {members?.map((member, index) => (
               <div
                 key={index}
-                className="flex flex-col gap-3 sm:gap-4 px-3 sm:px-4 py-4 sm:py-6 w-full bg-[#121015] min-h-[60vh] sm:min-h-[65vh] lg:min-h-[70vh] rounded-xl"
+                className="flex flex-col gap-3 sm:gap-4 px-4 sm:px-6 py-6 sm:py-8 w-full bg-[#121015] border-[1px] border-[#232323] rounded-xl"
               >
-                <div className="relative w-full flex-1 min-h-[45vh] sm:min-h-[50vh] lg:min-h-[55vh] rounded-md overflow-hidden">
-                  <Image
-                    className="rounded-md object-cover"
-                    src={`/images/${member.src}.jpg`}
-                    alt={member.name}
-                    fill
-                  />
-                </div>
-                <div className="flex flex-col gap-1 sm:gap-2">
+                <div className="flex flex-col gap-2 sm:gap-3">
                   <h2 className="font-figtree text-xl sm:text-2xl font-semibold text-white">
                     {member.name}
                   </h2>
-                  <h3 className="text-sm sm:text-base text-gray-300 leading-relaxed">
+                  <h3 className="text-base sm:text-lg text-[#1423C9] font-semibold">
                     {member.designation}
                   </h3>
+                </div>
+                <div className="flex-1">
+                  <p className="text-sm sm:text-base text-gray-300 leading-relaxed font-figtree">
+                    {member.description}
+                  </p>
                 </div>
               </div>
             ))}
