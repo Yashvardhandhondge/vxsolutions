@@ -1436,7 +1436,7 @@ const faqRef = useRef(null);
         </div>
       </div>
     </div>
-  );
+  
     </div>
   );
 };
