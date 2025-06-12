@@ -17,7 +17,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Products() {
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen overflow-x-hidden">
       <Navbar/>
       <PlatformFeaturesPage/>
 
