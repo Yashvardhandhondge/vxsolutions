@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { HelpCircle, FileText, MessageSquare, TicketIcon, AlertTriangle, Phone, Mail } from "lucide-react"
 import { Button } from "../../../../components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../../../../components/ui/card";
 import Link from "next/link"
 
 export default function SupportPage() {
