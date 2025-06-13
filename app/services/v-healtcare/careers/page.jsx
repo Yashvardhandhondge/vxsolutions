@@ -182,10 +182,10 @@ export default function CareersPage() {
                     </div>
                   </CardContent>
                   <CardFooter>
-                    <Button className="w-full bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-brand-cyan/90 hover:to-brand-blue/90">
+                    <Link href="/services/v-healtcare/contact" className="w-full bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-brand-cyan/90 hover:to-brand-blue/90">
                       Apply Now
                       <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
+                    </Link>
                   </CardFooter>
                 </Card>
               </motion.div>
