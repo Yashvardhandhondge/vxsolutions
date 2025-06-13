@@ -1,4 +1,4 @@
-// app/api/send-email/route.js
+
 import nodemailer from 'nodemailer';
 import { NextResponse } from 'next/server';
 
@@ -6,7 +6,7 @@ export async function POST(request) {
   try {
     const { name, email, phone, service, message } = await request.json();
 
-    // Validate required fields
+  
     if (!name || !email || !phone || !service || !message) {
       return NextResponse.json(
         { message: 'All fields are required' },
@@ -14,7 +14,7 @@ export async function POST(request) {
       );
     }
 
-    // Create transporter
+    
     const transporter = nodemailer.createTransporter({
       service: 'gmail',
       auth: {
@@ -26,7 +26,7 @@ export async function POST(request) {
     // Email content
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'abc@gmail.com',
+      to: 'Siva.kumar@vxsoftwaresolutions.com',
       subject: `New Contact Form Submission - ${service}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px;">
