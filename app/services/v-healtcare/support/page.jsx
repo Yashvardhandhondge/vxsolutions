@@ -12,25 +12,25 @@ export default function SupportPage() {
       icon: <HelpCircle className="h-8 w-8 text-brand-blue" />,
       title: "Product Troubleshooting",
       description: "Common RCM software issues & resolutions",
-      href: "/support/troubleshooting",
+      href:"#"
     },
     {
       icon: <FileText className="h-8 w-8 text-brand-blue" />,
       title: "Knowledge Base",
       description: "User guides, FAQs, and step-by-step manuals",
-      href: "/support/knowledge-base",
+      href: "#",
     },
     {
       icon: <MessageSquare className="h-8 w-8 text-brand-blue" />,
       title: "Talk to Support",
       description: "Get human help – fast response guaranteed",
-      href: "/support/contact",
+      href: "#",
     },
     {
       icon: <TicketIcon className="h-8 w-8 text-brand-blue" />,
       title: "Submit a Ticket",
       description: "Track your issues & get resolution updates",
-      href: "/support/ticket",
+      href: "#",
     },
   ]
 

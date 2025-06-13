@@ -10,37 +10,37 @@ export default function CareersPage() {
   const jobs = [
     {
       title: "Medical Coding Specialist",
-      requirements: "CPC certified",
+      requirements: "Certified",
       location: "Hyderabad",
       type: "Full-time",
     },
     {
       title: "RCM Account Manager",
-      requirements: "3+ years experience",
+      requirements: "Non-certified",
       location: "Hyderabad",
       type: "Full-time",
     },
     {
       title: "Client Onboarding Executive",
-      requirements: "2+ years experience",
+      requirements: "Non-certified",
       location: "Hyderabad",
       type: "Full-time",
     },
     {
       title: "QA Analyst – Medical Billing",
-      requirements: "3+ years experience",
+      requirements: "Non-certified",
       location: "Hyderabad",
       type: "Full-time",
     },
     {
       title: "Frontend Developer",
-      requirements: "React experience",
+      requirements: "Non-certified",
       location: "Hyderabad",
       type: "Full-time",
     },
     {
       title: "Product Manager – RCM Tools",
-      requirements: "Healthcare experience preferred",
+      requirements: "Non-certified",
       location: "Hyderabad",
       type: "Full-time",
     },

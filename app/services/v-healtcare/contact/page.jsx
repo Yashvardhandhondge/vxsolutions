@@ -1,7 +1,6 @@
 "use client"
 
-import  React from "react"
-
+import React from "react"
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { Mail, Phone, MapPin, Upload, X } from "lucide-react"
@@ -25,14 +24,43 @@ export default function ContactPage() {
   const [files, setFiles] = useState([])
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [submitError, setSubmitError] = useState("")
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setSubmitError("")
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false)
+    try {
+      // Create form data to handle file uploads
+      const formData = new FormData()
+
+      // Add all form fields
+      formData.append("name", formState.name)
+      formData.append("organization", formState.organization)
+      formData.append("email", formState.email)
+      formData.append("phone", formState.phone)
+      formData.append("service", formState.helpType)
+      formData.append("message", formState.message)
+
+      // Add files if any
+      files.forEach((file, index) => {
+        formData.append(`file-${index}`, file)
+      })
+
+      // Send data to API endpoint
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        body: formData,
+      })
+
+      const result = await response.json()
+
+      if (!response.ok) {
+        throw new Error(result.message || "Failed to send message")
+      }
+
+      // Success
       setIsSubmitted(true)
       setFormState({
         name: "",
@@ -43,7 +71,12 @@ export default function ContactPage() {
         message: "",
       })
       setFiles([])
-    }, 1500)
+    } catch (error) {
+      console.error("Error submitting form:", error)
+      setSubmitError(error.message || "An error occurred. Please try again.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e) => {
@@ -154,7 +187,12 @@ export default function ContactPage() {
                       </Button>
                     </div>
                   ) : (
-                    <form onSubmit={handleSubmit} className="space-y-4">
+                    <form onSubmit={handleSubmit} className="space-y-4" encType="multipart/form-data">
+                      {submitError && (
+                        <div className="p-3 bg-red-100 border border-red-400 text-red-700 rounded mb-4">
+                          {submitError}
+                        </div>
+                      )}
                       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                         <div className="space-y-2">
                           <Label htmlFor="name" className="text-light-300">

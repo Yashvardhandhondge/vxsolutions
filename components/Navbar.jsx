@@ -16,7 +16,7 @@ export default function Navbar() {
     { label: "Industries", href: "/industries" },
     {
       label: "Products",
-      href: "/products",
+      href: "#", // Changed from "/products" to "#" to prevent direct navigation
       hasDropdown: true,
       dropdownItems: [{ label: "V Remind", href: "/products" }],
     },
@@ -82,16 +82,25 @@ export default function Navbar() {
                     onClick={() => {
                       if (item.label === "Products") {
                         setIsProductsDropdownOpen(!isProductsDropdownOpen);
+                        setIsServicesDropdownOpen(false); // Close other dropdown
                       } else if (item.label === "Services") {
                         setIsServicesDropdownOpen(!isServicesDropdownOpen);
+                        setIsProductsDropdownOpen(false); // Close other dropdown
                       }
                     }}
                   >
-                    <Link href={item.href}>
+                    {/* Changed from Link to div for Products to prevent navigation */}
+                    {item.label === "Products" ? (
                       <h4 className="font-figtree uppercase text-sm lg:text-base xl:text-lg hover:text-[#A0DD34] nav-hover-btn font-semibold transition-colors duration-200 text-white">
                         {item.label}
                       </h4>
-                    </Link>
+                    ) : (
+                      <Link href={item.href}>
+                        <h4 className="font-figtree uppercase text-sm lg:text-base xl:text-lg hover:text-[#A0DD34] nav-hover-btn font-semibold transition-colors duration-200 text-white">
+                          {item.label}
+                        </h4>
+                      </Link>
+                    )}
                     <svg
                       className={`w-4 h-4 transition-transform duration-200 ${
                         (item.label === "Products" && isProductsDropdownOpen) ||
@@ -114,13 +123,6 @@ export default function Navbar() {
                     (item.label === "Services" && isServicesDropdownOpen)) && (
                     <div
                       className="absolute top-full left-0 mt-2 w-48 bg-[#1E1E1E] border border-[#313131] rounded-md shadow-lg z-50"
-                      onClick={() => {
-                        if (item.label === "Products") {
-                          setIsProductsDropdownOpen(!isProductsDropdownOpen);
-                        } else if (item.label === "Services") {
-                          setIsServicesDropdownOpen(!isServicesDropdownOpen);
-                        }
-                      }}
                     >
                       {item.dropdownItems?.map(
                         (dropdownItem, dropdownIndex) => (
@@ -160,11 +162,18 @@ export default function Navbar() {
                 {item.hasDropdown ? (
                   <div>
                     <div className="flex gap-1 items-center justify-center sm:px-6 py-4 hover:bg-[#313131] transition-colors duration-200">
-                      <Link href={item.href} onClick={toggleMobileMenu}>
+                      {/* For mobile Products menu, prevent navigation on parent item */}
+                      {item.label === "Products" ? (
                         <h4 className="font-figtree uppercase text-base sm:text-lg hover:text-[#A0DD34] font-semibold text-white">
                           {item.label}
                         </h4>
-                      </Link>
+                      ) : (
+                        <Link href={item.href} onClick={toggleMobileMenu}>
+                          <h4 className="font-figtree uppercase text-base sm:text-lg hover:text-[#A0DD34] font-semibold text-white">
+                            {item.label}
+                          </h4>
+                        </Link>
+                      )}
                       <button
                         onClick={() => {
                           if (item.label === "Products") {

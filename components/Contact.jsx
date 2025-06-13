@@ -43,12 +43,20 @@ export default function Contact() {
     setSubmitStatus(null);
 
     try {
+      // Using FormData to be compatible with the updated API
+      const formDataToSend = new FormData();
+      
+      // Add all form fields
+      Object.entries(formData).forEach(([key, value]) => {
+        formDataToSend.append(key, value);
+      });
+      
+      // Add organization field as optional (to match updated API)
+      formDataToSend.append('organization', 'Not specified');
+
       const response = await fetch('/api/send-email', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
+        body: formDataToSend,
       });
 
       const result = await response.json();
@@ -153,7 +161,7 @@ export default function Contact() {
 
           {/* Contact Form Section */}
           <div className="w-full xl:w-1/2 h-auto xl:h-[90vh]">
-            <form onSubmit={handleSubmit} className="w-full h-full flex flex-col gap-4 sm:gap-6 xl:overflow-auto">
+            <form onSubmit={handleSubmit} className="w-full h-full flex flex-col gap-4 sm:gap-6 xl:overflow-auto" encType="multipart/form-data">
               {/* Name Field */}
               <div className="flex flex-col gap-1 sm:gap-2">
                 <label className="text-white font-figtree text-sm sm:text-base">

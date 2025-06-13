@@ -454,7 +454,7 @@ const faqRef = useRef(null);
           <div className="flex-shrink-0">
   <Link href="/" className="block">
     <span className="text-xl font-bold text-gray-900">V Remind</span>
-    <span className="block text-xs text-gray-500">Created by Vx School Board</span>
+    <span className="block text-xs text-gray-500">Created by  VX software solutions</span>
   </Link>
 </div>
 
