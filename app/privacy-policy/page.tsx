@@ -112,7 +112,7 @@ export default function PrivacyPolicy() {
       content: "For questions or concerns about your privacy:",
       contact: {
         email: "Remind@vxsoftwaresolutions.com",
-        phone: "*************",
+        phone: "+91 9515053073",
         address: "VX Software Solutions Pvt. Ltd\n102, Namas Building, #945 Road No - 48,\nAyyappa Society, Madhapur\nHyderabad 500081"
       }
     }

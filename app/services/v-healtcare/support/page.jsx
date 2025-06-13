@@ -123,12 +123,13 @@ export default function SupportPage() {
                       <CardDescription className="text-light-400">{link.description}</CardDescription>
                     </CardHeader>
                     <CardFooter>
-                      <Button
+                      <Link
+                      href="/services/v-healtcare/contact"
                         variant="ghost"
                         className="w-full justify-start p-0 hover:bg-transparent hover:text-brand-blue text-light-300"
                       >
                         Learn more
-                      </Button>
+                      </Link>
                     </CardFooter>
                   </Card>
                 </Link>
@@ -152,24 +153,24 @@ export default function SupportPage() {
               <div className="space-y-6">
                 {[
                   {
-                    question: "How do I reset my password?",
+                    question: "How can your RCM solution improve our claims denial rate?",
                     answer:
-                      "You can reset your password by clicking on the 'Forgot Password' link on the login page. Follow the instructions sent to your email to create a new password.",
+                      "Our RCM solution reduces denials through advanced pre-submission claim scrubbing, automated coding validation, and payer-specific rule checks. On average, our clients see a 35% reduction in initial denials within the first 90 days of implementation.",
                   },
                   {
-                    question: "How do I update my billing information?",
+                    question: "What metrics do you track to measure RCM performance?",
                     answer:
-                      "To update your billing information, go to Settings > Billing and click on 'Edit Payment Method'. You can then enter your new payment details.",
+                      "We track key performance indicators including days in A/R, clean claim rate, collection rate, denial percentage, first-pass resolution rate, and cost-to-collect ratio. All these metrics are available through our real-time dashboard and monthly performance reports.",
                   },
                   {
-                    question: "Can I export my reports?",
+                    question: "How do you handle claim appeals and denials management?",
                     answer:
-                      "Yes, you can export your reports in various formats including PDF, CSV, and Excel. Simply navigate to the Reports section, select your desired report, and click on the Export button.",
+                      "We employ a specialized denials team that analyzes rejection patterns and follows a structured workflow for appeals. Each denial is categorized, root cause analyzed, and addressed through our three-tier escalation process to maximize recovery rate.",
                   },
                   {
-                    question: "How do I add a new user to my account?",
+                    question: "Can your system integrate with our existing EHR/EMR?",
                     answer:
-                      "To add a new user, go to Settings > Team Members and click on 'Add New User'. Fill in their details and assign appropriate permissions.",
+                      "Yes, our RCM platform integrates with all major EHR/EMR systems through secure HL7 interfaces, API connections, or FHIR protocols. We've successfully integrated with over 50 different systems including Epic, Cerner, Allscripts, and many specialty-specific platforms.",
                   },
                 ].map((faq, index) => (
                   <motion.div
@@ -208,7 +209,7 @@ export default function SupportPage() {
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <Phone className="h-4 w-4 text-brand-blue" />
-                      <span className="text-light-300">+91-XXXXXXXXXX</span>
+                      <span className="text-light-300">+91-9515053073</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Mail className="h-4 w-4 text-brand-blue" />

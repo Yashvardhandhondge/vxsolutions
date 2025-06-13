@@ -1,7 +1,7 @@
 import { HiSparkles } from "react-icons/hi";
 import Button from "../Button";
 import RoundedTag from "../RoundedTag";
-
+import Link from "next/link";
 export default function WrapperCard() {
   return (
     <div className="flex flex-col gap-3 sm:gap-4 lg:gap-6 justify-center w-full min-h-full bg-[#121015] px-4 sm:px-6 lg:px-7 xl:px-8 py-4 sm:py-6 lg:py-8 rounded-2xl sm:rounded-3xl">
@@ -29,7 +29,9 @@ export default function WrapperCard() {
       {/* Buttons */}
       <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-3 sm:gap-4 mt-2 sm:mt-4 w-full">
         <div className="w-full sm:w-auto">
-          <Button name={"Contact Us"} bgcolor={"#5029FF"} textcolor={"white"} />
+          <Link href="/contactus">
+            <Button name={"Contact Us"} bgcolor={"#5029FF"} textcolor={"white"} />
+          </Link>
         </div>
         <div className="w-full sm:w-auto">
           <Button

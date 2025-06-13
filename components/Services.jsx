@@ -67,7 +67,12 @@ export default function Services() {
       icon: "ui",
       description:
         "We design user experiences that are intuitive, elegant, and user-focused. From wireframes to final interfaces, our design team ensures your product not only looks great but feels great to use.",
-    },
+    }, {
+      title: "Healthcare ",
+      icon: "ui",
+      description:
+        "We build secure, compliant healthcare applications that improve patient care and streamline operations. From telemedicine platforms to electronic health records, our solutions enhance healthcare delivery and patient engagement.",
+    }
   ];
 
   return (

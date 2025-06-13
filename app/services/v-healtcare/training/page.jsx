@@ -110,13 +110,13 @@ export default function TrainingPage() {
               transition={{ duration: 0.8 }}
             >
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-brand-cyan to-brand-blue">
+                <h1 className="text-3xl text-blue-900 font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text  bg-gradient-to-r from-brand-cyan to-brand-blue">
                   Training Program
                 </h1>
                 <p className="max-w-[600px] text-brand-cyan font-semibold md:text-xl">Powered by VHealthcare</p>
               </div>
               <h2 className="text-2xl font-bold text-light-100">
-                Launch Your Career in Medical Coding with VHealthcare
+                Launch Your Career in Medical Coding with V Healthcare
               </h2>
               <p className="max-w-[600px] text-light-300 md:text-lg">
                 At VHealthcare, we don't just train — we transform careers. Our live, hands-on medical coding training

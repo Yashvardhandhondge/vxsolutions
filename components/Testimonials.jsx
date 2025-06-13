@@ -15,7 +15,6 @@ export default function Testimonials() {
         "Securely connect your data source with enterprise-grade protection, ensuring compliance and reliability. With built-in security measures, your data remains safe while maintaining seamless accessibility. Our platform is compatible with all major databases, enabling smooth and efficient integration.",
       name: "George William",
       designation: "Head of Data",
-      avatar: "/avatars/george.png",
       bgColor: "#2B154733",
       textColor: "#FFFFFF",
     },
@@ -24,7 +23,6 @@ export default function Testimonials() {
         "Our infrastructure became far more scalable after using this solution. The integration was smooth, and the support team was incredibly responsive throughout the process.",
       name: "Sophia Patel",
       designation: "Senior Data Engineer",
-      avatar: "/avatars/sophia.png",
       bgColor: "#3B4F2433",
       textColor: "#FFFFFF",
     },
@@ -33,7 +31,6 @@ export default function Testimonials() {
         "This platform has transformed the way our team collaborates and manages data pipelines. It's fast, secure, and easy to use—an absolute game changer.",
       name: "Liam Nguyen",
       designation: "Data Platform Lead",
-      avatar: "/avatars/liam.png",
       bgColor: "#2C3E5033",
       textColor: "#FFFFFF",
     },
@@ -42,7 +39,6 @@ export default function Testimonials() {
         "Integrating with legacy systems used to be a nightmare. Now it’s just a few clicks. The security layer gives us complete peace of mind.",
       name: "Aarav Mehta",
       designation: "IT Infrastructure Manager",
-      avatar: "/avatars/aarav.png",
       bgColor: "#42351A33",
       textColor: "#FFFFFF",
     },
@@ -51,7 +47,6 @@ export default function Testimonials() {
         "From onboarding to deployment, everything was seamless. It’s rare to find a product that balances performance with security so well.",
       name: "Emily Rodriguez",
       designation: "Cloud Solutions Architect",
-      avatar: "/avatars/emily.png",
       bgColor: "#1A1A1A33",
       textColor: "#FFFFFF",
     },
@@ -99,13 +94,13 @@ export default function Testimonials() {
               <hr />
               <div className="flex items-start gap-3 sm:gap-4">
                 <div className="relative w-16 h-16 sm:w-20 sm:h-20">
-                  <Image
+                  {/* <Image
                     src="/images/users/user1.jpg"
                     alt="User"
                     objectFit="cover"
                     objectPosition="0% 20%"
                     fill
-                  />
+                  /> */}
                 </div>
                 <div className="flex flex-col gap-1 sm:gap-2">
                   <h4 className="font-figtree text-base font-semibold text-white">

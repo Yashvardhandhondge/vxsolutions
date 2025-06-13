@@ -91,10 +91,10 @@ export default function Footer1() {
             <h3 className="text-lg font-bold mb-4 text-light-100">Contact</h3>
             <ul className="space-y-2">
               <li className="text-sm text-light-400">
-                <span className="font-medium text-light-300">Email:</span> support@vxsoftwaresolutions.com
+                <span className="font-medium text-light-300">Email:</span> remind@vxsoftwaresolutions.com
               </li>
               <li className="text-sm text-light-400">
-                <span className="font-medium text-light-300">Phone:</span> +91-XXXXXXXXXX
+                <span className="font-medium text-light-300">Phone:</span> +91-9515053073
               </li>
               <li className="text-sm text-light-400">
                 <span className="font-medium text-light-300">Office:</span> Hyderabad, Telangana, India

@@ -129,16 +129,16 @@ export default function AboutUs() {
               {coreValues?.map((value, index) => (
                 <div
                   key={index}
-                  className="relative w-full h-64 sm:h-72 lg:h-80 rounded-xl overflow-hidden"
+                  className="relative w-full h-64 sm:h-72 lg:h-80 rounded-xl overflow-hidden transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:shadow-[#1423C9]/20 cursor-pointer"
                 >
                   <Image
-                    className="rounded-xl object-cover"
+                    className="rounded-xl object-cover transition-transform duration-500 hover:scale-110"
                     src={`/images/${value.src}.png`}
                     alt="core-values"
                     fill
                   />
-                  <div className="absolute w-full h-full z-10 bg-[#00000080] rounded-xl" />
-                  <div className="flex flex-col gap-2 sm:gap-3 absolute bottom-2 sm:bottom-3 px-3 sm:px-4 z-20">
+                  <div className="absolute w-full h-full z-10 bg-[#00000080] hover:bg-[#00000095] transition-colors duration-300 rounded-xl" />
+                  <div className="flex flex-col gap-2 sm:gap-3 absolute bottom-2 sm:bottom-3 px-3 sm:px-4 z-20 transition-all duration-300 group-hover:bottom-4">
                     <h3 className="font-figtree text-lg sm:text-xl lg:text-2xl font-bold text-white">
                       {value.title}
                     </h3>

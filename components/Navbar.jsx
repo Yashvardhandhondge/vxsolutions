@@ -47,7 +47,7 @@ export default function Navbar() {
   return (
     <>
       <div className="flex items-center justify-between w-full bg-[#1E1E1E] border-b-[1px] border-[#313131] px-4 sm:px-6 py-4 sm:py-5">
-        <div className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <Image
             src="/images/logo.png"
             alt="vx software solutions"
@@ -57,7 +57,7 @@ export default function Navbar() {
           <h4 className="hidden md:block md:font-bold md:font-archivo text-sm sm:text-base md:text-lg text-white">
             VX SOFTWARE SOLUTIONS
           </h4>
-        </div>
+        </Link>
 
         <button
           className="md:hidden block cursor-pointer"

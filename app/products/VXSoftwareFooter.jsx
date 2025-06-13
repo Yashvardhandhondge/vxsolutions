@@ -44,15 +44,15 @@ export default function VXSoftwareFooter() {
               {/* Phone Numbers */}
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-white" />
-                <span className="text-white">+91 9876543210</span>
+                <span className="text-white">+91 9515053073</span>
                  <Phone className="w-4 h-4 ml-4 text-white" />
-                <span className="text-white">+91 9876543210</span>
+                <span className="text-white">+91 9515053073</span>
               </div>
               
               {/* Email */}
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-white" />
-                <span className="text-white">vxsoftwaresolutions@gmail.com</span>
+                <span className="text-white">remind@vxsoftwaresolutions.com</span>
               </div>
               
               {/* Socials */}

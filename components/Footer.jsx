@@ -50,14 +50,14 @@ export default function Footer() {
           <div className="flex flex-col space-y-2">
             <div className="flex flex-col lg:flex-col items-start lg:items-start xl:flex-row xl:items-center gap-2 xl:gap-6 lg:gap-2">
               <div className="flex items-center gap-2 font-figtree text-[#D2D2D2] hover:text-white">
-                <FaPhoneAlt /> <span>+91 9876543210</span>
+                <FaPhoneAlt /> <span>+91 9515053073</span>
               </div>
               <div className="flex items-center gap-2 font-figtree text-[#D2D2D2] hover:text-white">
-                <FaPhoneAlt /> <span>+91 9876543210</span>
+                <FaPhoneAlt /> <span>+91 9515053073</span>
               </div>
             </div>
             <div className="flex items-center gap-2 font-figtree text-[#D2D2D2] hover:text-white">
-              <FaEnvelope /> <span>vxsoftwaresolutions@gmail.com</span>
+              <FaEnvelope /> <span>remind@vxsoftwaresolutions.com</span>
             </div>
           </div>
 

@@ -15,6 +15,7 @@ export default function Portfolio() {
           bgColor: "#7134DD33",
           textColor: "#7134DD",
         },
+      
       ],
     },
     {
@@ -29,10 +30,10 @@ export default function Portfolio() {
         },
         {
           title: "Healthcare",
-          subtitle: "Jeeva",
-          link: "/portfolio/healthcare",
-          bgColor: "#5029FF33",
-          textColor: "#5029FF",
+          link: "/services/v-healtcare",
+          subtitle: "V Healthcare",
+          bgColor: "#34DDBB33",
+          textColor: "#34DDBB",
         },
         {
           title: "View all",

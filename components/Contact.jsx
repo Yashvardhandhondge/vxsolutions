@@ -18,6 +18,7 @@ export default function Contact() {
   const [submitStatus, setSubmitStatus] = useState(null);
 
   const serviceOptions = [
+    "Healthcare",
     "AI & Machine Learning",
     "Mobile Development",
     "Blockchain",
@@ -119,13 +120,13 @@ export default function Contact() {
                 <div className="flex items-center gap-1 sm:gap-2">
                   <MdCall className="text-white text-sm sm:text-base" />
                   <h4 className="font-figtree text-sm sm:text-base text-white">
-                    +91 9876543210
+                    +91 9515053073
                   </h4>
                 </div>
                 <div className="flex items-center gap-1 sm:gap-2">
                   <MdCall className="text-white text-sm sm:text-base" />
                   <h4 className="font-figtree text-sm sm:text-base text-white">
-                    +91 9876543210
+                    +91 9515053073
                   </h4>
                 </div>
               </div>
@@ -134,7 +135,7 @@ export default function Contact() {
               <div className="flex items-center gap-1 sm:gap-2">
                 <MdEmail className="text-white text-sm sm:text-base" />
                 <h4 className="font-figtree text-sm sm:text-base text-white break-all">
-                  vxsoftwaresolutions@gmail.com
+                  remind@vxsoftwaresolutions.com
                 </h4>
               </div>
 
@@ -169,7 +170,6 @@ export default function Contact() {
                 />
               </div>
 
-              {/* Email & Phone Row */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <div className="flex-1 flex flex-col gap-1 sm:gap-2">
                   <label className="text-white font-figtree text-sm sm:text-base">

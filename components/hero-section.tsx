@@ -48,7 +48,7 @@ export default function HeroSection() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
               >
-                VX Software Solutions
+               <span className="text-white">V</span> <span className="text-blue-900">Healthcare</span>
               </motion.h1>
               <motion.p
                 className="max-w-[600px] text-light-400 md:text-xl"
@@ -74,13 +74,13 @@ export default function HeroSection() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.5 }}
             >
-              <Link href="/contact">
+              <Link href="/services/v-healtcare/contact">
                 <Button className="bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-brand-cyan/90 hover:to-brand-blue/90 shadow-md shadow-brand-cyan/20">
                   Get Started
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
-              <Link href="/about">
+              <Link href="/services/v-healtcare/about">
                 <Button
                   variant="outline"
                   className="border-brand-cyan text-brand-cyan hover:bg-brand-cyan/10 transition-colors"

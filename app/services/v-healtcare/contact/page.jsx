@@ -351,7 +351,7 @@ export default function ContactPage() {
                     <Mail className="h-6 w-6 text-brand-blue" />
                     <div>
                       <h3 className="font-bold text-light-100">Email</h3>
-                      <p className="text-light-300">support@vxsoftwaresolutions.com</p>
+                      <p className="text-light-300">remind@vxsoftwaresolutions.com</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -360,7 +360,7 @@ export default function ContactPage() {
                     <Phone className="h-6 w-6 text-brand-blue" />
                     <div>
                       <h3 className="font-bold text-light-100">Phone</h3>
-                      <p className="text-light-300">+91-XXXXXXXXXX</p>
+                      <p className="text-light-300">+91-9515053073</p>
                     </div>
                   </CardContent>
                 </Card>

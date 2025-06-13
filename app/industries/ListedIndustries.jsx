@@ -54,7 +54,7 @@ export default function ListedIndustries() {
         "We create immersive, accessible, and intuitive EdTech platforms. From e-learning apps to LMS and virtual classrooms, our solutions enhance learning outcomes for educators, institutions, and students around the world.",
     },
     {
-      title: "Real Estate",
+      title: "V Interior",
       icon: "realestate",
       span: 1,
       bgColor: "#A0DD341A",

@@ -423,11 +423,30 @@ const PlatformFeaturesPage = () => {
     ];
     const pricingRef = useRef(null);
 const faqRef = useRef(null);
-  
+    const [scrolled, setScrolled] = useState(false)
+      useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setScrolled(true)
+      } else {
+        setScrolled(false)
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
 
   return (
     <div>
-       <nav className="bg-white shadow-sm border-b border-gray-300 ">
+       <nav 
+         className={`sticky top-0 z-50 w-full transition-all duration-300 ${
+        scrolled
+          ? "bg-white shadow-sm border-b border-gray-300"
+          : "bg-transparent"
+      }`}>
         <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
@@ -1155,8 +1174,6 @@ const faqRef = useRef(null);
         </h1>
       </div>
 
-      {/* FAQ Items */}
-      {/* FAQ Items */}
 <div className="space-y-4 p-8 "  >
   {faqData.map((item, index) => (
     <div

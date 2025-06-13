@@ -50,11 +50,11 @@ export default function Navbar1() {
     >
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
-          <motion.div
+            <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="font-bold text-2xl bg-clip-text text-transparent bg-gradient-to-r from-brand-cyan via-brand-blue to-brand-purple"
+            className="font-bold text-2xl text-white bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 drop-shadow-[0_0_2px_rgba(255,255,255,0.3)]"
           >
             V Healthcare
           </motion.div>

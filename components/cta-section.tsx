@@ -55,7 +55,7 @@ export default function CTASection() {
             transition={{ delay: 0.3, duration: 0.5 }}
           >
             <Link href="/services/v-healtcare/contact">
-              <Button className="bg-white text-brand-cyan hover:bg-blue-50 shadow-lg shadow-blue-900/20">
+              <Button className="bg-white text-black hover:bg-blue-50 shadow-lg shadow-blue-900/20">
                 Contact Us
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>

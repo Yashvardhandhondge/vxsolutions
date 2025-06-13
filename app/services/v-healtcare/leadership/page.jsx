@@ -9,25 +9,21 @@ export default function LeadershipPage() {
     {
       name: "Vamsi Krishna",
       role: "Founder & CEO",
-      image: "/placeholder.svg?height=400&width=400",
       bio: "I'm Vamsi, the Founder and CEO of VX Software Solutions. Over the past 6 years, I've built multiple tech products from the ground up. My passion lies in solving real operational challenges through innovation. For the last 4 years, I've been deeply involved in the RCM domain, working across medical coding and billing projects. I believe in creating systems that are not just scalable — but truly impactful for healthcare providers.",
     },
     {
       name: "Venkata Siva Kumar",
       role: "Co-Founder & Managing Director",
-      image: "/placeholder.svg?height=400&width=400",
       bio: "I'm Siva Kumar, and I handle the strategic growth and operations at VX. With 5 years of experience in managing organizations and securing project leads, I've always focused on execution and delivery. I stay closely involved in day-to-day operations to make sure every client engagement is handled with care, clarity, and commitment.",
     },
     {
       name: "Pradeep",
       role: "Co-Founder & CFO",
-      image: "/placeholder.svg?height=400&width=400",
       bio: "Hi, I'm Pradeep — a Chartered Accountant and the CFO at VX. I bring over 5 years of experience in finance and accounting to the table. Numbers are my language, and I make sure every financial process we run is sharp, compliant, and optimized. At VX, I'm focused on building a financially strong, transparent, and trustworthy ecosystem for our clients and teams.",
     },
     {
       name: "Dr. V Deepak Kumar",
       role: "President, V Healthcare Division",
-      image: "/placeholder.svg?height=400&width=400",
       bio: "I'm Dr. Deepak Kumar — MBBS, MD in General Medicine — and President of our healthcare division. With 15 years in medical practice, I've seen first-hand how important efficient RCM is for patient care. Starting this journey was not just a professional decision, but a personal passion. Through VX, I aim to blend clinical understanding with operational excellence to truly support healthcare institutions.",
     },
   ]
@@ -99,7 +95,7 @@ export default function LeadershipPage() {
       <section className="w-full py-12 md:py-24 lg:py-32 bg-dark-300">
         <div className="container px-4 md:px-6">
           <motion.div
-            className="grid grid-cols-1 gap-12"
+            className="grid grid-cols-1 gap-8 md:gap-12"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
@@ -108,25 +104,25 @@ export default function LeadershipPage() {
             {leaders.map((leader, index) => (
               <motion.div
                 key={index}
-                className={`grid gap-6 ${index % 2 === 0 ? "lg:grid-cols-[1fr_2fr]" : "lg:grid-cols-[2fr_1fr]"} lg:gap-12 items-center`}
+                className="bg-dark-200 border border-dark-100 rounded-xl p-6 md:p-8"
                 variants={itemVariants}
+                whileHover={{ 
+                  y: -5,
+                  boxShadow: "0 10px 30px -15px rgba(0, 0, 255, 0.15)",
+                  transition: { duration: 0.2 }
+                }}
               >
-                <div className={`${index % 2 === 1 && "lg:order-last"}`}>
-                  <motion.div
-                    className="relative overflow-hidden rounded-lg bg-dark-200"
-                    whileHover={{ scale: 1.02 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                  >
-                    <div className="aspect-square">
-                      <img
-                        src={leader.image || "/placeholder.svg"}
-                        alt={leader.name}
-                        className="object-cover w-full h-full"
-                      />
-                    </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-dark-400 to-transparent opacity-70"></div>
-                    <div className="absolute bottom-0 left-0 right-0 p-4">
-                      <div className="flex justify-center space-x-4">
+                <div className="flex flex-col md:flex-row md:items-start gap-6">
+                  <div className="w-full md:w-1/4">
+                    <div className="space-y-2">
+                      <div className="inline-block p-3 rounded-lg bg-brand-blue/10 mb-2">
+                        <div className="w-8 h-8 rounded-full bg-brand-blue/30 flex items-center justify-center">
+                          <span className="text-brand-blue font-bold text-lg">{leader.name.charAt(0)}</span>
+                        </div>
+                      </div>
+                      <h2 className="text-2xl font-bold text-light-100">{leader.name}</h2>
+                      <p className="text-brand-blue font-medium">{leader.role}</p>
+                      <div className="flex space-x-4 pt-2">
                         <Link href="#" className="text-light-300 hover:text-brand-blue transition-colors">
                           <Linkedin className="h-5 w-5" />
                           <span className="sr-only">LinkedIn</span>
@@ -141,14 +137,10 @@ export default function LeadershipPage() {
                         </Link>
                       </div>
                     </div>
-                  </motion.div>
-                </div>
-                <div className="space-y-4">
-                  <div>
-                    <h2 className="text-2xl font-bold text-light-100">{leader.name}</h2>
-                    <p className="text-brand-blue font-medium">{leader.role}</p>
                   </div>
-                  <p className="text-light-300 leading-relaxed">{leader.bio}</p>
+                  <div className="w-full md:w-3/4">
+                    <p className="text-light-300 leading-relaxed">{leader.bio}</p>
+                  </div>
                 </div>
               </motion.div>
             ))}
