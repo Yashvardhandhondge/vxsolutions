@@ -1,7 +1,7 @@
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
-import Testimonials from "@/components/Testimonials";
+import Contact from "../../components/Contact";
+import Footer from "../../components/Footer";
+import Navbar from "../../components/Navbar"
+import Testimonials from "../../components/Testimonials";
 import ListedPortfolio from "./ListedPortfolio";
 
 export default function Portfolio() {

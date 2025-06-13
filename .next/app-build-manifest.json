@@ -17,15 +17,10 @@
       "static/css/app/products/page.css",
       "static/chunks/app/products/page.js"
     ],
-    "/privacy-policy/page": [
+    "/about-us/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/privacy-policy/page.js"
-    ],
-    "/contactus/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/contactus/page.js"
+      "static/chunks/app/about-us/page.js"
     ],
     "/blog/page": [
       "static/chunks/webpack.js",
@@ -38,20 +33,10 @@
       "static/css/app/blogone/page.css",
       "static/chunks/app/blogone/page.js"
     ],
-    "/about-us/page": [
+    "/contactus/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/about-us/page.js"
-    ],
-    "/portfolio/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/portfolio/page.js"
-    ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/chunks/app/contactus/page.js"
     ]
   }
 }

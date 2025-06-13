@@ -1,8 +1,8 @@
 import React from "react"
-import Navbar from "@/components/Navbar"
-import Contact from "@/components/Contact"
-import Testimonials from "@/components/Testimonials"
-import Footer from "@/components/Footer"
+import Navbar from "../../components/Navbar"
+import Contact from "../../components/Contact"
+import Testimonials from "../../components/Testimonials"
+import Footer from "../../components/Footer"
 
 export default function ContactUs(){
     return (

@@ -1,8 +1,8 @@
-import Navbar from "@/components/Navbar"
+import Navbar from "../../components/Navbar"
 import ContentGrid from "./ContentGrid"
-import Testimonials from "@/components/Testimonials"
-import Contact from "@/components/Contact"
-import Footer from "@/components/Footer"
+import Testimonials from "../../components/Testimonials"
+import Contact from "../../components/Contact"
+import Footer from "../../components/Footer"
 
 export default function Blog(){
     return (

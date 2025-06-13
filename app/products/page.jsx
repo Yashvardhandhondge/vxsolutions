@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar";
+import Navbar from "../../components/Navbar";
 import SubNavbar from "./Subnav";
 import Herosection from "./Herosection";
 import VXSchoolBoard from "./VXSchoolBoard";
