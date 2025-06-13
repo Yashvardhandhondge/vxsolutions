@@ -1,5 +1,0 @@
-{
-  "/api/send-email/route": "app/api/send-email/route.js",
-  "/contactus/page": "app/contactus/page.js",
-  "/services/v-healtcare/page": "app/services/v-healtcare/page.js"
-}
