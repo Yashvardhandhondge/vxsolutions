@@ -1,4 +1,4 @@
-// File: D:\freelance 3 4 minor\vxsolutions\app\page.jsx
+// File: D:\freelance last delete this\vxsolutions\app\page.jsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

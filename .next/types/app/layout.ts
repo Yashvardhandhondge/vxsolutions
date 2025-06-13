@@ -1,4 +1,4 @@
-// File: D:\freelance 3 4 minor\vxsolutions\app\layout.jsx
+// File: D:\freelance last delete this\vxsolutions\app\layout.jsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
