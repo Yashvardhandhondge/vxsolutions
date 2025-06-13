@@ -14,7 +14,7 @@ export default function HeroSection() {
           {[...Array(5)].map((_, i) => (
             <motion.div
               key={i}
-              className="absolute rounded-full bg-brand-indigo/10"
+              className="absolute rounded-full bg-brand-cyan/10"
               style={{
                 width: `${Math.random() * 300 + 50}px`,
                 height: `${Math.random() * 300 + 50}px`,
@@ -43,7 +43,7 @@ export default function HeroSection() {
           >
             <div className="space-y-2">
               <motion.h1
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none gradient-text"
+                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-brand-cyan to-brand-blue"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
@@ -75,13 +75,16 @@ export default function HeroSection() {
               transition={{ delay: 0.8, duration: 0.5 }}
             >
               <Link href="/contact">
-                <Button className="bg-brand-blue hover:bg-brand-blue/90 animate-pulse-glow">
+                <Button className="bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-brand-cyan/90 hover:to-brand-blue/90 shadow-md shadow-brand-cyan/20">
                   Get Started
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
               <Link href="/about">
-                <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue/10">
+                <Button
+                  variant="outline"
+                  className="border-brand-cyan text-brand-cyan hover:bg-brand-cyan/10 transition-colors"
+                >
                   Learn More
                 </Button>
               </Link>
@@ -98,7 +101,7 @@ export default function HeroSection() {
               animate={{ y: [0, -10, 0] }}
               transition={{ repeat: Number.POSITIVE_INFINITY, duration: 6, ease: "easeInOut" }}
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-brand-blue to-brand-indigo rounded-lg shadow-2xl flex items-center justify-center overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-brand-cyan to-brand-blue rounded-lg shadow-2xl flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 bg-dark-300/50 backdrop-blur-sm"></div>
                 <div className="relative z-10 p-8 text-white">
                   <div className="space-y-2 mb-6">

@@ -7,22 +7,22 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/
 export default function FeatureSection() {
   const features = [
     {
-      icon: <FileText className="h-10 w-10 text-brand-blue" />,
+      icon: <FileText className="h-10 w-10 text-brand-cyan" />,
       title: "Accurate Medical Coding",
       description: "Expert CPT, ICD, and HCPCS coding to ensure maximum reimbursement and compliance.",
     },
     {
-      icon: <CheckCircle className="h-10 w-10 text-brand-blue" />,
+      icon: <CheckCircle className="h-10 w-10 text-brand-cyan" />,
       title: "Efficient Billing Process",
       description: "Streamlined billing workflows that accelerate payment cycles and improve cash flow.",
     },
     {
-      icon: <Shield className="h-10 w-10 text-brand-blue" />,
+      icon: <Shield className="h-10 w-10 text-brand-cyan" />,
       title: "Compliance Management",
       description: "Stay up-to-date with changing healthcare regulations and billing requirements.",
     },
     {
-      icon: <Code className="h-10 w-10 text-brand-blue" />,
+      icon: <Code className="h-10 w-10 text-brand-cyan" />,
       title: "Tech-Enabled Solutions",
       description: "Cutting-edge software that automates repetitive tasks and reduces human error.",
     },
@@ -58,7 +58,9 @@ export default function FeatureSection() {
           transition={{ duration: 0.5 }}
         >
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl gradient-text">Key Features</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-brand-cyan to-brand-blue">
+              Key Features
+            </h2>
             <p className="max-w-[900px] text-light-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Our comprehensive RCM solutions designed to optimize your healthcare business
             </p>
@@ -73,7 +75,7 @@ export default function FeatureSection() {
         >
           {features.map((feature, index) => (
             <motion.div key={index} variants={itemVariants}>
-              <Card className="h-full card-hover bg-dark-200 border-dark-100">
+              <Card className="h-full bg-dark-200 border-dark-100 shadow-md shadow-dark-100/20 hover:shadow-brand-cyan/10 hover:-translate-y-1 transition-all duration-300">
                 <CardHeader>
                   <motion.div
                     className="p-2 w-16 h-16 rounded-full bg-dark-100 flex items-center justify-center mb-4"

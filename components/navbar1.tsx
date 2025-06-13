@@ -15,6 +15,7 @@ export default function Navbar1() {
   const navItems = [
     { name: "Home", href: "/services/v-healtcare" },
     { name: "About", href: "/services/v-healtcare/about" },
+      { name: "Training", href: "/services/v-healtcare/training" },
     { name: "Careers", href: "/services/v-healtcare/careers" },
     { name: "Leadership", href: "/services/v-healtcare/leadership" },
     { name: "Support", href: "/services/v-healtcare/support" },
@@ -42,7 +43,9 @@ export default function Navbar1() {
   return (
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-        scrolled ? "bg-dark-300/90 backdrop-blur-md shadow-lg" : "bg-transparent"
+        scrolled
+          ? "bg-gradient-to-r from-dark-300/95 via-dark-200/95 to-dark-300/95 backdrop-blur-md shadow-lg shadow-brand-purple/10"
+          : "bg-transparent"
       }`}
     >
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
@@ -51,36 +54,38 @@ export default function Navbar1() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="font-bold text-2xl gradient-text"
+            className="font-bold text-2xl bg-clip-text text-transparent bg-gradient-to-r from-brand-cyan via-brand-blue to-brand-purple"
           >
-            VX Software
+            V Healthcare
           </motion.div>
         </Link>
         <nav className="hidden md:flex gap-6">
           {navItems.map((item, index) => (
-            <motion.div
-              key={item.name}
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1, duration: 0.5 }}
-            >
+            <div key={item.name} className="relative">
               <Link
                 href={item.href}
-                className={`text-sm font-medium transition-colors hover:text-brand-blue ${
-                  isActive(item.href) ? "text-brand-blue" : "text-light-300"
+                className={`text-sm font-medium transition-colors hover:text-brand-cyan ${
+                  isActive(item.href) ? "text-brand-cyan" : "text-light-300"
                 }`}
               >
                 {item.name}
+                {isActive(item.href) && (
+                  <motion.div
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-brand-cyan to-brand-blue"
+                    layoutId="navbar-indicator"
+                    transition={{ type: "spring", bounce: 0.25, duration: 0.5 }}
+                  />
+                )}
               </Link>
-            </motion.div>
+            </div>
           ))}
         </nav>
         <div className="hidden md:flex">
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 0.5 }}>
-            <Link href="/contact">
-              <Button className="bg-brand-blue hover:bg-brand-blue/90">Contact Us</Button>
-            </Link>
-          </motion.div>
+          <Link href="/services/v-healtcare/contact">
+            <Button className="bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-brand-cyan/90 hover:to-brand-blue/90 shadow-md shadow-brand-cyan/20">
+              Contact Us
+            </Button>
+          </Link>
         </div>
         <button className="block md:hidden" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
           {isOpen ? <X className="text-light-100" /> : <Menu className="text-light-100" />}
@@ -95,7 +100,7 @@ export default function Navbar1() {
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <div className="container px-4 py-4 flex flex-col gap-4 bg-dark-300">
+            <div className="container px-4 py-4 flex flex-col gap-4 bg-gradient-to-b from-dark-200 to-dark-300">
               {navItems.map((item, index) => (
                 <motion.div
                   key={item.name}
@@ -105,8 +110,8 @@ export default function Navbar1() {
                 >
                   <Link
                     href={item.href}
-                    className={`text-sm font-medium transition-colors hover:text-brand-blue ${
-                      isActive(item.href) ? "text-brand-blue" : "text-light-300"
+                    className={`text-sm font-medium transition-colors hover:text-brand-cyan ${
+                      isActive(item.href) ? "text-brand-cyan" : "text-light-300"
                     }`}
                     onClick={() => setIsOpen(false)}
                   >
@@ -119,8 +124,10 @@ export default function Navbar1() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: navItems.length * 0.1 }}
               >
-                <Link href="/contact" onClick={() => setIsOpen(false)}>
-                  <Button className="w-full bg-brand-blue hover:bg-brand-blue/90">Contact Us</Button>
+                <Link href="/services/v-healtcare/contact" onClick={() => setIsOpen(false)}>
+                  <Button className="w-full bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-brand-cyan/90 hover:to-brand-blue/90">
+                    Contact Us
+                  </Button>
                 </Link>
               </motion.div>
             </div>

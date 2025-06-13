@@ -7,7 +7,7 @@ import { Button } from "./ui/button"
 
 export default function CTASection() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-brand-blue to-brand-indigo relative overflow-hidden">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-brand-cyan to-brand-blue relative overflow-hidden">
       {/* Animated particles */}
       <div className="absolute inset-0">
         {[...Array(20)].map((_, i) => (
@@ -54,8 +54,8 @@ export default function CTASection() {
             viewport={{ once: true }}
             transition={{ delay: 0.3, duration: 0.5 }}
           >
-            <Link href="/contact">
-              <Button className="bg-white text-brand-blue hover:bg-blue-50 shadow-lg shadow-blue-900/20">
+            <Link href="/services/v-healtcare/contact">
+              <Button className="bg-white text-brand-cyan hover:bg-blue-50 shadow-lg shadow-blue-900/20">
                 Contact Us
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>

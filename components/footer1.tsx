@@ -81,7 +81,7 @@ export default function Footer1() {
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-sm text-light-400 hover:text-brand-blue transition-colors">
+                <Link href="/services/v-healtcare/contact" className="text-sm text-light-400 hover:text-brand-blue transition-colors">
                   Contact Us
                 </Link>
               </li>
