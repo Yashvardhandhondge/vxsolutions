@@ -11,7 +11,7 @@ export default function CareersPage() {
     {
       title: "Medical Coding Specialist",
       requirements: "CPC certified",
-      location: "Remote",
+      location: "Hyderabad",
       type: "Full-time",
     },
     {
@@ -23,7 +23,7 @@ export default function CareersPage() {
     {
       title: "Client Onboarding Executive",
       requirements: "2+ years experience",
-      location: "Remote / Hyderabad",
+      location: "Hyderabad",
       type: "Full-time",
     },
     {
@@ -35,7 +35,7 @@ export default function CareersPage() {
     {
       title: "Frontend Developer",
       requirements: "React experience",
-      location: "Remote",
+      location: "Hyderabad",
       type: "Full-time",
     },
     {
@@ -316,8 +316,8 @@ export default function CareersPage() {
               viewport={{ once: true }}
               transition={{ delay: 0.3, duration: 0.5 }}
             >
-              <Link href="/careers#open-roles">
-                <Button className="bg-white text-brand-cyan hover:bg-blue-50 shadow-lg shadow-blue-900/20">
+              <Link href="/services/v-healtcare/careers">
+                <Button className="bg-white text-black hover:bg-blue-50 shadow-lg shadow-blue-900/20">
                   View Open Positions
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>

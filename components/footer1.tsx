@@ -5,7 +5,7 @@ export default function Footer1() {
   return (
     <footer className="w-full bg-dark-200 py-12">
       <div className="container px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <h3 className="text-lg font-bold gradient-text">VX Software Solutions</h3>
             <p className="text-sm text-light-400">
@@ -35,58 +35,28 @@ export default function Footer1() {
             <h3 className="text-lg font-bold mb-4 text-light-100">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-sm text-light-400 hover:text-brand-blue transition-colors">
+                <Link href="/services/v-healtcare" className="text-sm text-light-400 hover:text-brand-blue transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-sm text-light-400 hover:text-brand-blue transition-colors">
+                <Link href="/services/v-healtcare/about" className="text-sm text-light-400 hover:text-brand-blue transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/careers" className="text-sm text-light-400 hover:text-brand-blue transition-colors">
+                <Link href="/services/v-healtcare/careers" className="text-sm text-light-400 hover:text-brand-blue transition-colors">
                   Careers
                 </Link>
               </li>
               <li>
-                <Link href="/leadership" className="text-sm text-light-400 hover:text-brand-blue transition-colors">
+                <Link href="/services/v-healtcare/leadership" className="text-sm text-light-400 hover:text-brand-blue transition-colors">
                   Leadership
                 </Link>
               </li>
             </ul>
           </div>
-          <div>
-            <h3 className="text-lg font-bold mb-4 text-light-100">Support</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/support" className="text-sm text-light-400 hover:text-brand-blue transition-colors">
-                  Support Center
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/support#knowledge-base"
-                  className="text-sm text-light-400 hover:text-brand-blue transition-colors"
-                >
-                  Knowledge Base
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/support#submit-ticket"
-                  className="text-sm text-light-400 hover:text-brand-blue transition-colors"
-                >
-                  Submit a Ticket
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/v-healtcare/contact" className="text-sm text-light-400 hover:text-brand-blue transition-colors">
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
-          </div>
+        
           <div>
             <h3 className="text-lg font-bold mb-4 text-light-100">Contact</h3>
             <ul className="space-y-2">

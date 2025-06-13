@@ -183,27 +183,27 @@ const PlatformFeaturesPage = () => {
       {
         title: "Web Platform for Schools",
         subtitle: "A powerful web-based platform designed for modern schools.",
-        image: "/productpage/nine.png"
+        image: "/Frame1.svg"
       },
       {
         title: "Web Platform for Teachers",
         subtitle: "A smart web platform built to support today's educators.",
-        image: "/productpage/nine.png"
+        image: "/Frame2.svg"
       },
       {
         title: "Mobile Application for Teachers",
         subtitle: "A dedicated mobile app that empowers teachers on the go.",
-        image: "/productpage/nine.png"
+        image: "/Frame3.svg"
       },
       {
         title: "Web Platform for Parents / Students",
         subtitle: "An easy-to-use web platform for parents and students to stay informed and engaged.",
-        image: "/productpage/nine.png"
+        image: "/Frame4.svg"
       },
       {
         title: "Mobile Application for Parents",
         subtitle: "A convenient mobile application for parents to stay connected.",
-        image: "/productpage/nine.png"
+        image: "/Frame5.svg"
       }
     ];
   
@@ -441,12 +441,13 @@ const faqRef = useRef(null);
 
   return (
     <div>
-       <nav 
-         className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-        scrolled
-          ? "bg-white shadow-sm border-b border-gray-300"
-          : "bg-transparent"
-      }`}>
+   <div className={`${scrolled ? 'fixed top-0' : 'relative'} left-0 right-0 z-[1000] w-full transition-all duration-300`}>
+      <nav 
+        className={`w-full transition-all duration-300 ${
+          scrolled
+            ? "bg-white shadow-md border-b border-gray-300"
+            : "bg-white border-b border-gray-300"
+        }`}>
         <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
@@ -614,7 +615,7 @@ const faqRef = useRef(null);
           </div>
         </div>
       </nav>
-
+</div>
       <div className={`bg-white p-4 ${figtree.className}`}>
         <div className="min-h-[90vh] rounded-[16px] bg-black text-white flex items-center justify-center px-6 py-10 relative">
           <div className="max-w-6xl mx-auto text-center relative z-10">
@@ -936,9 +937,13 @@ const faqRef = useRef(null);
               Designed for Schools, Trusted by Teachers, Loved by Parents
             </h1>
           </div>
-
+            <img
+                      src="/Dashboard.svg"
+                      alt="Enterprise Dashboard"
+                      className="hidden sm:block w-full h-full object-cover"
+                    />
           {/* Cards Container */}
-          <div className="relative p-4">
+          <div className="block sm:hidden relative p-4">
             <div 
               ref={containerRef}
               className="flex hide-scrollbar overflow-x-auto gap-6 mb-8 snap-x snap-mandatory"
@@ -950,7 +955,7 @@ const faqRef = useRef(null);
               {platforms.map((platform, index) => (
                 <div 
                   key={index}
-                  className="flex-shrink-0 w-72 h-96 bg-white p-3 rounded-xl  border border-gray-100 overflow-hidden  transition-shadow duration-300 flex flex-col snap-start"
+                  className="flex-shrink-0 w-72 h-96 bg-white p-3 rounded-xl border border-gray-100 overflow-hidden transition-shadow duration-300 flex flex-col snap-start"
                 >
                   {/* Image Header */}
                   <div className="h-48 w-full rounded overflow-hidden">
