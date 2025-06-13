@@ -18,8 +18,8 @@ export default function WorkflowSection() {
       src: "discovery",
       hoverBgColor: "#6C3BFF",
       textColor: "black",
-      // You can replace these with actual image URLs
-      imageUrl: "/images/discovery.jpg" // Replace with your actual image path
+
+      imageUrl: "/images/discovery.jpg" 
     },
     {
       step: "02",
@@ -29,7 +29,7 @@ export default function WorkflowSection() {
       src: "resource",
       hoverBgColor: "#FFF5CC",
       textColor: "black",
-      imageUrl: "/images/resource.jpg" // Replace with your actual image path
+      imageUrl: "/images/resource.jpg" 
     },
     {
       step: "03",
@@ -39,7 +39,7 @@ export default function WorkflowSection() {
       src: "development",
       hoverBgColor: "#F0FFE2",
       textColor: "#000000",
-      imageUrl: "/images/development.jpg" // Replace with your actual image path
+      imageUrl: "/images/development.jpg" 
     },
     {
       step: "04",
@@ -49,7 +49,7 @@ export default function WorkflowSection() {
       src: "launch",
       hoverBgColor: "#E3DEFF",
       textColor: "#000000",
-      imageUrl: "/images/launch.jpg" // Replace with your actual image path
+      imageUrl: "/images/launch.jpg" 
     },
   ];
 
@@ -99,7 +99,7 @@ export default function WorkflowSection() {
                 }}
                 className="relative w-full h-[320px] sm:h-[380px] md:h-[420px] lg:h-[480px] rounded-xl overflow-hidden"
               >
-                {/* Content Layer */}
+            
                 <div 
                   className={`absolute inset-0 flex flex-col gap-4 sm:gap-5 md:gap-6 p-3 sm:p-4 transition-opacity duration-500 ${
                     hoveredCard === index ? 'opacity-0' : 'opacity-100'
@@ -118,7 +118,6 @@ export default function WorkflowSection() {
                   </p>
                 </div>
 
-                {/* Image Layer */}
                 <div 
                   className={`absolute inset-0 transition-opacity duration-500 ${
                     hoveredCard === index ? 'opacity-100' : 'opacity-0'
@@ -129,12 +128,12 @@ export default function WorkflowSection() {
                     alt={step.title}
                     className="w-full h-full object-cover rounded-xl"
                     onError={(e) => {
-                      // Fallback if image doesn't exist
+                  
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
                     }}
                   />
-                  {/* Fallback content if image fails to load */}
+             
                   <div 
                     className="w-full h-full bg-gradient-to-br from-gray-400 to-gray-600 rounded-xl hidden items-center justify-center"
                     style={{ backgroundColor: step.hoverBgColor }}
@@ -146,7 +145,7 @@ export default function WorkflowSection() {
                   </div>
                 </div>
 
-                {/* Optional overlay text on image */}
+            
                 <div 
                   className={`absolute bottom-0 left-0 right-0 bg-black/50 text-white p-3 sm:p-4 transition-opacity duration-500 ${
                     hoveredCard === index ? 'opacity-100' : 'opacity-0'

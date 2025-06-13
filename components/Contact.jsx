@@ -1,145 +1,22 @@
-// import Image from "next/image";
-// import { FaLocationDot } from "react-icons/fa6";
-// import { MdCall, MdEmail } from "react-icons/md";
-// import Button from "./Button";
-
-// export default function Contact() {
-//   const serviceOptions = [
-//     "AI & Machine Learning",
-//     "Mobile Development",
-//     "Blockchain",
-//     "Big Data",
-//     "Software Development",
-//     "Cloud Services",
-//     "AR/VR",
-//     "UX/UI Services",
-//   ];
-
-//   return (
-//     <>
-//       <div className="flex flex-col gap-4 bg-[#0C0C0C] px-6 py-4">
-//         <div className="flex flex-col gap-1">
-//           <h2 className="font-figtree font-semibold text-2xl">Contact Us</h2>
-//           <h5 className="font-figtree font-semibold text-xl text-[#D2D2D2]">
-//             Let’s come together to create something truly great.
-//           </h5>
-//         </div>
-//         <div className="flex flex-col lg:flex-row md:flex-col items-start gap-4  w-full bg-[#121015] rounded-xl px-5 py-6">
-//           <div className="relative z-0 w-full h-[90vh] rounded-2xl">
-//             <Image
-//               src="/images/contact.jpg"
-//               className="rounded-2xl"
-//               fill
-//               alt="contact form"
-//               objectFit="cover"
-//             />
-//             <div className="absolute w-full h-full z-10 bg-[#0000008F] rounded-2xl" />
-//             <div className="absolute bottom-2 left-4 z-20 flex flex-col gap-2">
-//               <h4 className="font-figtree font-bold">Contact Details</h4>
-//               <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-5">
-//                 <div className="flex items-center gap-1">
-//                   <MdCall />
-//                   <h4 className="font-figtree">+91 9876543210</h4>
-//                 </div>
-//                 <div className="flex items-center gap-1">
-//                   <MdCall />
-//                   <h4 className="font-figtree">+91 9876543210</h4>
-//                 </div>
-//               </div>
-//               <div className="flex items-center gap-1">
-//                 <MdEmail />
-//                 <h4 className="font-figtree">vxsoftwaresolutions@gmail.com</h4>
-//               </div>
-//               <div className="flex items-start gap-1">
-//                 <FaLocationDot className="mt-1" />
-//                 <h4 className="font-figtree w-48 md:w-sm">
-//                   241/242, 4th Floor, Building No 2, Solitaire Corporate Park
-//                   Chakala, Andheri (East), Mumbai, Maharashtra 400093
-//                 </h4>
-//               </div>
-//             </div>
-//           </div>
-//           <div className="w-full h-[90vh]">
-//             <form className="w-full h-[90vh] flex flex-col gap-6 overflow-auto">
-//               {/* Name */}
-//               <div className="flex flex-col gap-1">
-//                 <label className="text-[#D2D2D2] font-figtree">Name</label>
-//                 <input
-//                   type="text"
-//                   placeholder="Enter Name"
-//                   className="bg-transparent border border-[#555] rounded-lg px-4 py-2 placeholder:font-figtree placeholder:text-[#777] text-white focus:outline-none focus:border-[#888]"
-//                 />
-//               </div>
-//               <div className="flex flex-col md:flex-row gap-4">
-//                 <div className="flex-1 flex flex-col gap-1">
-//                   <label className="text-[#D2D2D2] font-figtree">
-//                     Email ID
-//                   </label>
-//                   <input
-//                     type="email"
-//                     placeholder="Enter Email ID"
-//                     className="bg-transparent border border-[#555] rounded-lg px-4 py-2 placeholder:font-figtree placeholder:text-[#777] text-white focus:outline-none focus:border-[#888]"
-//                   />
-//                 </div>
-//                 <div className="flex-1 flex flex-col gap-1">
-//                   <label className="text-[#D2D2D2] font-figtree">
-//                     Phone Number
-//                   </label>
-//                   <input
-//                     type="tel"
-//                     placeholder="Enter Phone Number"
-//                     className="bg-transparent border border-[#555] rounded-lg px-4 py-2 placeholder:font-figtree placeholder:text-[#777] text-white focus:outline-none focus:border-[#888]"
-//                   />
-//                 </div>
-//               </div>
-//               <div className="flex flex-col gap-1">
-//                 <label className="text-[#D2D2D2] font-figtree">Service</label>
-//                 <select
-//                   defaultValue=""
-//                   className="bg-transparent border border-[#555] rounded-lg px-4 py-2 text-[#D2D2D2] font-figtree focus:outline-none focus:border-[#888] appearance-none"
-//                 >
-//                   <option value="" disabled>
-//                     Select Service
-//                   </option>
-//                   {serviceOptions.map((svc) => (
-//                     <option
-//                       className="text-black font-figtree"
-//                       key={svc}
-//                       value={svc}
-//                     >
-//                       {svc}
-//                     </option>
-//                   ))}
-//                 </select>
-//               </div>
-//               <div className="flex flex-col gap-1 flex-1">
-//                 <label className="text-[#D2D2D2] font-figtree">Message</label>
-//                 <textarea
-//                   placeholder="Enter your message"
-//                   className="flex-1 bg-transparent border border-[#555] rounded-lg px-4 py-2 placeholder:font-figtree placeholder:text-[#777] text-white resize-none focus:outline-none focus:border-[#888]"
-//                 />
-//               </div>
-//               <div className="self-end">
-//                 <Button
-//                   name={"Send Request"}
-//                   bgcolor={"#5029FF"}
-//                   textcolor={"white"}
-//                 />
-//               </div>
-//             </form>
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
+'use client';
 
 import Image from "next/image";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdCall, MdEmail } from "react-icons/md";
 import Button from "./Button";
+import { useState } from "react";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    service: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
+
   const serviceOptions = [
     "AI & Machine Learning",
     "Mobile Development",
@@ -150,6 +27,50 @@ export default function Contact() {
     "AR/VR",
     "UX/UI Services",
   ];
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus({ type: 'success', message: 'Message sent successfully!' });
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          service: '',
+          message: ''
+        });
+      } else {
+        setSubmitStatus({ type: 'error', message: result.message || 'Failed to send message' });
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setSubmitStatus({ type: 'error', message: 'An error occurred. Please try again.' });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <>
@@ -163,6 +84,17 @@ export default function Contact() {
             Let's come together to create something truly great.
           </h5>
         </div>
+
+        {/* Status Message */}
+        {submitStatus && (
+          <div className={`p-4 rounded-lg text-center ${
+            submitStatus.type === 'success' 
+              ? 'bg-green-900 text-green-200 border border-green-700' 
+              : 'bg-red-900 text-red-200 border border-red-700'
+          }`}>
+            {submitStatus.message}
+          </div>
+        )}
 
         {/* Main Content Container */}
         <div className="flex flex-col xl:flex-row items-start gap-4 sm:gap-6 w-full bg-[#121015] rounded-xl px-3 sm:px-5 lg:px-6 py-4 sm:py-6">
@@ -210,10 +142,9 @@ export default function Contact() {
               <div className="flex items-start gap-1 sm:gap-2">
                 <FaLocationDot className="mt-1 text-white text-sm sm:text-base flex-shrink-0" />
                 <h4 className="font-figtree text-sm sm:text-base text-white leading-relaxed max-w-xs sm:max-w-sm lg:max-w-md">
-                 Flat no 102, Namas Building, #945
-Road No - 48, Ayyappa Society, Madhapur
-Hyderabad 500081
-
+                  Flat no 102, Namas Building, #945
+                  Road No - 48, Ayyappa Society, Madhapur
+                  Hyderabad 500081
                 </h4>
               </div>
             </div>
@@ -221,15 +152,19 @@ Hyderabad 500081
 
           {/* Contact Form Section */}
           <div className="w-full xl:w-1/2 h-auto xl:h-[90vh]">
-            <form className="w-full h-full flex flex-col gap-4 sm:gap-6 xl:overflow-auto">
+            <form onSubmit={handleSubmit} className="w-full h-full flex flex-col gap-4 sm:gap-6 xl:overflow-auto">
               {/* Name Field */}
               <div className="flex flex-col gap-1 sm:gap-2">
                 <label className="text-white font-figtree text-sm sm:text-base">
-                  Name
+                  Name *
                 </label>
                 <input
                   type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
                   placeholder="Enter Name"
+                  required
                   className="bg-transparent border border-[#555] rounded-lg px-3 sm:px-4 py-2 sm:py-3 placeholder:font-figtree placeholder:text-[#777] text-white focus:outline-none focus:border-[#888] text-sm sm:text-base"
                 />
               </div>
@@ -238,21 +173,29 @@ Hyderabad 500081
               <div className="flex flex-col sm:flex-row gap-4">
                 <div className="flex-1 flex flex-col gap-1 sm:gap-2">
                   <label className="text-white font-figtree text-sm sm:text-base">
-                    Email ID
+                    Email ID *
                   </label>
                   <input
                     type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
                     placeholder="Enter Email ID"
+                    required
                     className="bg-transparent border border-[#555] rounded-lg px-3 sm:px-4 py-2 sm:py-3 placeholder:font-figtree placeholder:text-[#777] text-white focus:outline-none focus:border-[#888] text-sm sm:text-base"
                   />
                 </div>
                 <div className="flex-1 flex flex-col gap-1 sm:gap-2">
                   <label className="text-white font-figtree text-sm sm:text-base">
-                    Phone Number
+                    Phone Number *
                   </label>
                   <input
                     type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
                     placeholder="Enter Phone Number"
+                    required
                     className="bg-transparent border border-[#555] rounded-lg px-3 sm:px-4 py-2 sm:py-3 placeholder:font-figtree placeholder:text-[#777] text-white focus:outline-none focus:border-[#888] text-sm sm:text-base"
                   />
                 </div>
@@ -261,11 +204,14 @@ Hyderabad 500081
               {/* Service Dropdown */}
               <div className="flex flex-col gap-1 sm:gap-2">
                 <label className="text-white font-figtree text-sm sm:text-base">
-                  Service
+                  Service *
                 </label>
                 <select
-                  defaultValue=""
-                  className="bg-transparent border border-[#555] rounded-lg px-3 sm:px-4 py-2 sm:py-3 text-[#D2D2D2] font-figtree focus:outline-none focus:border-[#888] appearance-none text-sm sm:text-base"
+                  name="service"
+                  value={formData.service}
+                  onChange={handleInputChange}
+                  required
+                  className="bg-transparent border border-[#555] rounded-lg px-3 sm:px-4 py-2 sm:py-3 text-white font-figtree focus:outline-none focus:border-[#888] appearance-none text-sm sm:text-base"
                 >
                   <option value="" disabled>
                     Select Service
@@ -285,22 +231,28 @@ Hyderabad 500081
               {/* Message Textarea */}
               <div className="flex flex-col gap-1 sm:gap-2 flex-1">
                 <label className="text-white font-figtree text-sm sm:text-base">
-                  Message
+                  Message *
                 </label>
                 <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
                   placeholder="Enter your message"
                   rows={4}
+                  required
                   className="flex-1 min-h-[100px] sm:min-h-[120px] xl:flex-1 bg-transparent border border-[#555] rounded-lg px-3 sm:px-4 py-2 sm:py-3 placeholder:font-figtree placeholder:text-[#777] text-white resize-none focus:outline-none focus:border-[#888] text-sm sm:text-base"
                 />
               </div>
 
               {/* Submit Button */}
               <div className="self-center sm:self-end mt-2 sm:mt-0">
-                <Button
-                  name={"Send Request"}
-                  bgcolor={"#5029FF"}
-                  textcolor={"white"}
-                />
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="bg-[#5029FF] text-white font-figtree px-6 py-3 rounded-lg hover:bg-[#4020DD] disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200"
+                >
+                  {isSubmitting ? 'Sending...' : 'Send Request'}
+                </button>
               </div>
             </form>
           </div>
