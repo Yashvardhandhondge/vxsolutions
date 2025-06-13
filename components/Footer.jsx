@@ -1,3 +1,5 @@
+  import Link from 'next/link';
+
 import {
   FaEnvelope,
   FaFacebookF,
@@ -87,6 +89,13 @@ export default function Footer() {
                 <FaFacebookF color="#1877F2" size={20} />
               </a>
             </div>
+     
+<div>
+  <Link href="/privacy-policy" className="font-figtree font-semibold text-sm mb-2 mt-4 block hover:underline">
+    Privacy policy
+  </Link>
+</div>
+              
           </div>
         </div>
       </div>

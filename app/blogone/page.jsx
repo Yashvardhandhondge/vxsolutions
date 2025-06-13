@@ -46,18 +46,21 @@ export default function VadimPeskovPodcast() {
             </div>
           </div>
 
-          {/* Featured Image */}
-          <div className="mb-12 rounded-lg overflow-hidden">
-            <div className="relative h-96 ">
-              <img 
-                src="/blogpage/image.png" 
-                alt="Futuristic technology concept with geometric shapes and digital network"
-                className="w-full h-full object-cover"
-              />
-              {/* Dark overlay for text readability */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/30"></div>
-            </div>
-          </div>
+         <div className="mb-12 rounded-lg overflow-hidden">
+  <div className="relative h-96">
+    <video
+      src="/video.mp4" // replace with your actual video path
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="w-full h-full object-cover"
+    />
+    {/* Dark overlay for text readability */}
+    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/30"></div>
+  </div>
+</div>
+
 
           {/* Blog Content */}
           <article className="prose prose-lg prose-invert max-w-full">
