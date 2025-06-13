@@ -4,7 +4,7 @@ import { Figtree } from "next/font/google";
 import Navbar from '../../components/Navbar';
 import Testimonials from '../../components/Testimonials';
 import Contact from '../../components/Contact';
-import Footer from '../../components/Footer';
+import Footer from '../../components/footer1';
 const figtree = Figtree({
   subsets: ["latin"],
   weight: ["400", "600", "700"], // Customize as needed

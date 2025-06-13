@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "app/services/v-healtcare/page.jsx", "app/services/v-healtcare/leadership/page.jsx", "app/services/v-healtcare/contact/page.jsx", "app/services/v-healtcare/careers/page.jsx", "app/services/v-healtcare/about/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]

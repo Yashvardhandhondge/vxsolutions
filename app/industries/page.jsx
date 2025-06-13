@@ -2,7 +2,7 @@ import Navbar from "../../components/Navbar";
 import ListedIndustries from "./ListedIndustries";
 import Testimonials from "../../components/Testimonials";
 import Contact from "../../components/Contact";
-import Footer from "../../components/Footer";
+import Footer from "../../components/footer1";
 
 export default function Industries() {
   return (

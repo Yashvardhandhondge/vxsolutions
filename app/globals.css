@@ -3,6 +3,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* Add brand colors for healthcare theme */
+  --brand-blue: #2563eb;
+  --brand-indigo: #4f46e5;
+  --dark-100: #1f2937;
+  --dark-200: #111827;
+  --dark-300: #0f172a;
+  --dark-400: #0c1426;
+  --light-100: #f8fafc;
+  --light-300: #cbd5e1;
+  --light-400: #94a3b8;
 }
 
 @theme inline {
@@ -10,6 +20,15 @@
   --color-foreground: var(--foreground);
   --font-archivo: var(--font-archivo);
   --font-figtree: var(--font-figtree);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-indigo: var(--brand-indigo);
+  --color-dark-100: var(--dark-100);
+  --color-dark-200: var(--dark-200);
+  --color-dark-300: var(--dark-300);
+  --color-dark-400: var(--dark-400);
+  --color-light-100: var(--light-100);
+  --color-light-300: var(--light-300);
+  --color-light-400: var(--light-400);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,6 +42,19 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Add custom utility classes for healthcare theme */
+.gradient-text {
+  @apply bg-gradient-to-r from-brand-blue to-brand-indigo bg-clip-text text-transparent;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:scale-105 hover:shadow-xl;
+}
+
+.animate-pulse-glow {
+  @apply animate-pulse hover:shadow-lg hover:shadow-brand-blue/25;
 }
 
 .nav-hover-btn {
@@ -45,3 +77,4 @@ body {
   @apply text-transparent font-extrabold;
   -webkit-text-stroke: 4px #5029FF;
 }
+

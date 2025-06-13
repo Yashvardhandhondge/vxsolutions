@@ -7,7 +7,12 @@ import { useState } from "react";
 export default function Navbar() {
   const navItems = [
     { label: "Home", href: "/" },
-    { label: "Services", href: "/#services" },
+    {
+      label: "Services",
+      href: "/#services",
+      hasDropdown: true,
+      dropdownItems: [{ label: "V Healthcare", href: "/services/v-healtcare" }],
+    },
     { label: "Industries", href: "/industries" },
     {
       label: "Products",
@@ -23,7 +28,9 @@ export default function Navbar() {
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isProductsDropdownOpen, setIsProductsDropdownOpen] = useState(false);
+  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
   const [isMobileProductsOpen, setIsMobileProductsOpen] = useState(false);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -31,6 +38,10 @@ export default function Navbar() {
 
   const toggleMobileProducts = () => {
     setIsMobileProductsOpen(!isMobileProductsOpen);
+  };
+
+  const toggleMobileServices = () => {
+    setIsMobileServicesOpen(!isMobileServicesOpen);
   };
 
   return (
@@ -68,9 +79,13 @@ export default function Navbar() {
                 <div className="relative">
                   <div
                     className="flex items-center gap-1 cursor-pointer"
-                    onClick={() =>
-                      setIsProductsDropdownOpen(!isProductsDropdownOpen)
-                    }
+                    onClick={() => {
+                      if (item.label === "Products") {
+                        setIsProductsDropdownOpen(!isProductsDropdownOpen);
+                      } else if (item.label === "Services") {
+                        setIsServicesDropdownOpen(!isServicesDropdownOpen);
+                      }
+                    }}
                   >
                     <Link href={item.href}>
                       <h4 className="font-figtree uppercase text-sm lg:text-base xl:text-lg hover:text-[#A0DD34] nav-hover-btn font-semibold transition-colors duration-200 text-white">
@@ -78,8 +93,12 @@ export default function Navbar() {
                       </h4>
                     </Link>
                     <svg
-                      className={`w-4 h-4 transition-transform duration-200 ${isProductsDropdownOpen ? "rotate-180" : ""
-                        }`}
+                      className={`w-4 h-4 transition-transform duration-200 ${
+                        (item.label === "Products" && isProductsDropdownOpen) ||
+                        (item.label === "Services" && isServicesDropdownOpen)
+                          ? "rotate-180"
+                          : ""
+                      }`}
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -91,12 +110,17 @@ export default function Navbar() {
                     </svg>
                   </div>
 
-                  {isProductsDropdownOpen && (
+                  {((item.label === "Products" && isProductsDropdownOpen) ||
+                    (item.label === "Services" && isServicesDropdownOpen)) && (
                     <div
                       className="absolute top-full left-0 mt-2 w-48 bg-[#1E1E1E] border border-[#313131] rounded-md shadow-lg z-50"
-                      onClick={() =>
-                        setIsProductsDropdownOpen(!isProductsDropdownOpen)
-                      }
+                      onClick={() => {
+                        if (item.label === "Products") {
+                          setIsProductsDropdownOpen(!isProductsDropdownOpen);
+                        } else if (item.label === "Services") {
+                          setIsServicesDropdownOpen(!isServicesDropdownOpen);
+                        }
+                      }}
                     >
                       {item.dropdownItems?.map(
                         (dropdownItem, dropdownIndex) => (
@@ -142,13 +166,23 @@ export default function Navbar() {
                         </h4>
                       </Link>
                       <button
-                        onClick={toggleMobileProducts}
+                        onClick={() => {
+                          if (item.label === "Products") {
+                            toggleMobileProducts();
+                          } else if (item.label === "Services") {
+                            toggleMobileServices();
+                          }
+                        }}
                         className="p-1"
-                        aria-label="Toggle products submenu"
+                        aria-label={`Toggle ${item.label.toLowerCase()} submenu`}
                       >
                         <svg
-                          className={`w-5 h-5 transition-transform duration-200 ${isMobileProductsOpen ? "rotate-180" : ""
-                            }`}
+                          className={`w-5 h-5 transition-transform duration-200 ${
+                            (item.label === "Products" && isMobileProductsOpen) ||
+                            (item.label === "Services" && isMobileServicesOpen)
+                              ? "rotate-180"
+                              : ""
+                          }`}
                           fill="currentColor"
                           viewBox="0 0 20 20"
                         >
@@ -162,7 +196,8 @@ export default function Navbar() {
                     </div>
 
                     {/* Mobile Dropdown Items */}
-                    {isMobileProductsOpen && (
+                    {((item.label === "Products" && isMobileProductsOpen) ||
+                      (item.label === "Services" && isMobileServicesOpen)) && (
                       <div className="bg-[#2A2A2A] border-t border-[#313131]">
                         {item.dropdownItems?.map(
                           (dropdownItem, dropdownIndex) => (

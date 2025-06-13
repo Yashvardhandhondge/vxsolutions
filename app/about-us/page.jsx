@@ -1,7 +1,7 @@
 "use client";
 
 import Contact from "../../components/Contact";
-import Footer from "../../components/Footer";
+import Footer from "../../components/footer1";
 import Navbar from "../../components/Navbar";
 import Testimonials from "../../components/Testimonials";
 import Image from "next/image";

@@ -12,10 +12,8 @@ export async function POST(request) {
         { message: 'All fields are required' },
         { status: 400 }
       );
-    }
-
-    
-    const transporter = nodemailer.createTransporter({
+    }    
+    const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
         user: process.env.EMAIL_USER, // Your Gmail address
