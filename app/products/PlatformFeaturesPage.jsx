@@ -183,12 +183,12 @@ const PlatformFeaturesPage = () => {
       {
         title: "Web Platform for Schools",
         subtitle: "A powerful web-based platform designed for modern schools.",
-        image: "/Frame1.svg"
+        image: "/Dashboard.svg"
       },
       {
         title: "Web Platform for Teachers",
         subtitle: "A smart web platform built to support today's educators.",
-        image: "/Frame2.svg"
+        image: "/Dashboard1.svg"
       },
       {
         title: "Mobile Application for Teachers",
@@ -198,12 +198,12 @@ const PlatformFeaturesPage = () => {
       {
         title: "Web Platform for Parents / Students",
         subtitle: "An easy-to-use web platform for parents and students to stay informed and engaged.",
-        image: "/Frame4.svg"
+        image: "/Dashboard2.svg"
       },
       {
         title: "Mobile Application for Parents",
         subtitle: "A convenient mobile application for parents to stay connected.",
-        image: "/Frame5.svg"
+        image: "/Frame1.svg"
       }
     ];
   
@@ -937,13 +937,9 @@ const faqRef = useRef(null);
               Designed for Schools, Trusted by Teachers, Loved by Parents
             </h1>
           </div>
-            <img
-                      src="/Dashboard.svg"
-                      alt="Enterprise Dashboard"
-                      className="hidden sm:block w-full h-full object-cover"
-                    />
+        
           {/* Cards Container */}
-          <div className="block sm:hidden relative p-4">
+          <div className="relative p-4">
             <div 
               ref={containerRef}
               className="flex hide-scrollbar overflow-x-auto gap-6 mb-8 snap-x snap-mandatory"
